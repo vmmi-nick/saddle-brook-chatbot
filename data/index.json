@@ -1,0 +1,1996 @@
+{
+ "helpDeskPhone": "201-587-2912",
+ "helpDeskLabel": "Township HELP line",
+ "lastChecked": "2026-11-22",
+ "townHall": {
+  "address": "55 Mayhill Street, Saddle Brook, NJ 07663",
+  "mainPhone": "201-587-2900"
+ },
+ "topics": [
+  {
+   "id": "town-hall",
+   "keywords": {
+    "en": [
+     "town hall",
+     "town hall hours",
+     "when is town hall open",
+     "municipal complex",
+     "town hall address",
+     "where is town hall"
+    ],
+    "es": [
+     "ayuntamiento",
+     "horario del ayuntamiento",
+     "direccion del ayuntamiento",
+     "complejo municipal"
+    ]
+   },
+   "en": {
+    "lead": "Town Hall is at the Municipal Complex, 55 Mayhill Street, and is open Monday to Friday, 8:30 AM to 4:00 PM.",
+    "details": [
+     "Town Hall moved from 93 Market Street to 55 Mayhill Street. All municipal services, payments, meetings and appointments are at the new address.",
+     "The Department of Public Works keeps different hours: Monday to Friday, 7:00 AM to 3:30 PM."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Town Hall",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El Ayuntamiento está en el Complejo Municipal, 55 Mayhill Street, y abre de lunes a viernes, de 8:30 AM a 4:00 PM.",
+    "details": [
+     "El Ayuntamiento se mudó de 93 Market Street a 55 Mayhill Street. Todos los servicios municipales, pagos, reuniones y citas son en la nueva dirección.",
+     "El Departamento de Obras Públicas tiene otro horario: de lunes a viernes, de 7:00 AM a 3:30 PM."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Ayuntamiento",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "mayor",
+   "keywords": {
+    "en": [
+     "mayor",
+     "who is the mayor",
+     "robert white",
+     "mayor's office"
+    ],
+    "es": [
+     "alcalde",
+     "quien es el alcalde",
+     "robert white",
+     "oficina del alcalde"
+    ]
+   },
+   "en": {
+    "lead": "The mayor of Saddle Brook is Robert D. White.",
+    "details": [
+     "Mayor White has served since 2015 and was re-elected on November 3, 2026.",
+     "The Mayor's Office runs the township HELP line for resident questions and concerns."
+    ],
+    "contact": [
+     {
+      "label": "Mayor's Office",
+      "value": "201-587-2903",
+      "href": "tel:+12015872903"
+     },
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El alcalde de Saddle Brook es Robert D. White.",
+    "details": [
+     "El alcalde White sirve desde 2015 y fue reelegido el 3 de noviembre de 2026.",
+     "La Oficina del Alcalde administra la línea de ayuda HELP del municipio para preguntas e inquietudes de los residentes."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Alcalde",
+      "value": "201-587-2903",
+      "href": "tel:+12015872903"
+     },
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/meeting-agendas-and-minutes/saddle-brook-mayor-and-council/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "council",
+   "keywords": {
+    "en": [
+     "council",
+     "council members",
+     "who is on the council",
+     "council president",
+     "township council"
+    ],
+    "es": [
+     "concejo",
+     "miembros del concejo",
+     "quienes estan en el concejo",
+     "presidente del concejo"
+    ]
+   },
+   "en": {
+    "lead": "The Township Council has five members: Andrew Cimiluca (Council President), Todd J. Accomando, David Gierek, Florence Mazzer and Sarah Sanchez.",
+    "details": [
+     "The council roster on the township site is the current published roster. Council seats change at the January reorganization meeting, so check the Mayor and Council page for the newest roster at the start of the year."
+    ],
+    "contact": [
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El Concejo Municipal tiene cinco miembros: Andrew Cimiluca (Presidente del Concejo), Todd J. Accomando, David Gierek, Florence Mazzer y Sarah Sanchez.",
+    "details": [
+     "La lista del concejo en el sitio del municipio es la lista oficial actual. Los puestos del concejo cambian en la reunión de reorganización de enero, así que consulte la página del Alcalde y el Concejo a principios de año."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/meeting-agendas-and-minutes/saddle-brook-mayor-and-council/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "meetings",
+   "keywords": {
+    "en": [
+     "council meeting",
+     "next meeting",
+     "meeting schedule",
+     "when is the next council meeting",
+     "work session",
+     "meeting agenda",
+     "meeting minutes"
+    ],
+    "es": [
+     "reunion del concejo",
+     "proxima reunion",
+     "horario de reuniones",
+     "agenda de la reunion",
+     "actas"
+    ]
+   },
+   "en": {
+    "lead": "Township Council work sessions are on the first Thursday of the month at 5:30 PM, and regular public meetings are on the third Thursday at 7:00 PM, at the Municipal Complex.",
+    "details": [
+     "Agendas and minutes are posted on the township website, and the Township Clerk keeps the official records.",
+     "Ask me for the next meeting and I will give you the exact date from the 2026 schedule."
+    ],
+    "contact": [
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Municipal Complex",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las sesiones de trabajo del Concejo Municipal son el primer jueves del mes a las 5:30 PM, y las reuniones públicas regulares son el tercer jueves a las 7:00 PM, en el Complejo Municipal.",
+    "details": [
+     "Las agendas y actas se publican en el sitio web del municipio, y el Secretario Municipal guarda los registros oficiales.",
+     "Pregúnteme por la próxima reunión y le daré la fecha exacta del calendario 2026."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Complejo Municipal",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/meeting-agendas-and-minutes/council-meetings/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "clerk",
+   "keywords": {
+    "en": [
+     "township clerk",
+     "clerk's office",
+     "clerk office",
+     "ordinances",
+     "township seal"
+    ],
+    "es": [
+     "secretario municipal",
+     "oficina del secretario",
+     "ordenanzas"
+    ]
+   },
+   "en": {
+    "lead": "The Township Clerk's Office handles council agendas, resolutions, minutes and ordinances, elections and voter registration, and many township licenses.",
+    "details": [
+     "The Clerk is the liaison between residents and the Township Council and keeps the township's official records. Office hours are Monday to Friday, 8:30 AM to 4:00 PM."
+    ],
+    "contact": [
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Township Clerk's Office",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La Oficina del Secretario Municipal se encarga de las agendas, resoluciones, actas y ordenanzas del concejo, las elecciones y el registro de votantes, y muchas licencias del municipio.",
+    "details": [
+     "El Secretario es el enlace entre los residentes y el Concejo Municipal y guarda los registros oficiales del municipio. El horario es de lunes a viernes, de 8:30 AM a 4:00 PM."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-township-clerk/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "elections",
+   "keywords": {
+    "en": [
+     "vote",
+     "voter registration",
+     "register to vote",
+     "election",
+     "polling place",
+     "where do i vote",
+     "absentee ballot",
+     "vote by mail"
+    ],
+    "es": [
+     "votar",
+     "registro de votantes",
+     "registrarse para votar",
+     "elecciones",
+     "donde voto",
+     "voto por correo"
+    ]
+   },
+   "en": {
+    "lead": "Voter registration in Saddle Brook runs through the Township Clerk's Office, and New Jersey elections are run with Bergen County.",
+    "details": [
+     "Registration forms, including Spanish and Korean versions, are on the township forms page. Registration closes 21 days before an election in New Jersey.",
+     "For polling place and ballot questions, the Clerk's Office can point you to the right county listing."
+    ],
+    "contact": [
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El registro de votantes en Saddle Brook se hace a través de la Oficina del Secretario Municipal, y las elecciones de New Jersey se realizan junto con el Condado de Bergen.",
+    "details": [
+     "Los formularios de registro, incluidas las versiones en español y coreano, están en la página de formularios del municipio. El registro cierra 21 días antes de una elección en New Jersey.",
+     "Para preguntas sobre su lugar de votación y la boleta, la Oficina del Secretario puede indicarle el listado correcto del condado."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-township-clerk/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "opra",
+   "keywords": {
+    "en": [
+     "opra",
+     "public records",
+     "records request",
+     "open public records",
+     "request records"
+    ],
+    "es": [
+     "opra",
+     "registros publicos",
+     "solicitud de registros",
+     "pedir documentos"
+    ]
+   },
+   "en": {
+    "lead": "Public records requests under OPRA go to the Township Clerk's Office, the township's custodian of records.",
+    "details": [
+     "Submit the township OPRA form to the Clerk. The township generally has seven business days to respond under New Jersey law."
+    ],
+    "contact": [
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Township Clerk's Office",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las solicitudes de registros públicos bajo OPRA van a la Oficina del Secretario Municipal, el custodio de registros del municipio.",
+    "details": [
+     "Presente el formulario OPRA del municipio al Secretario. Por ley de New Jersey, el municipio generalmente tiene siete días laborables para responder."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-township-clerk/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "taxes",
+   "keywords": {
+    "en": [
+     "property tax",
+     "pay my taxes",
+     "tax bill",
+     "taxes due",
+     "tax payment",
+     "tax collector",
+     "tax sale",
+     "property taxes",
+     "pay property taxes",
+     "pay taxes",
+     "tax payment online"
+    ],
+    "es": [
+     "impuestos",
+     "pagar mis impuestos",
+     "factura de impuestos",
+     "recaudador de impuestos",
+     "impuesto a la propiedad"
+    ]
+   },
+   "en": {
+    "lead": "Property taxes are due February 1, May 1, August 1 and November 1, with a 10 day grace period. The Tax Collector is Linda Pellicier.",
+    "details": [
+     "Taxes can be paid online through the township's property tax payment portal, in person at the Municipal Complex, or by mail. Only property taxes can be paid through the online portal.",
+     "Late payments are charged interest from the due date: 8 percent on the first $1,500 of the delinquency and 18 percent above that."
+    ],
+    "contact": [
+     {
+      "label": "Tax Collector, Linda Pellicier",
+      "value": "201-587-2914",
+      "href": "tel:+12015872914"
+     },
+     {
+      "label": "Tax Collector's Office",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los impuestos a la propiedad vencen el 1 de febrero, 1 de mayo, 1 de agosto y 1 de noviembre, con un período de gracia de 10 días. La Recaudadora de Impuestos es Linda Pellicier.",
+    "details": [
+     "Los impuestos se pueden pagar en línea en el portal de pagos del municipio, en persona en el Complejo Municipal, o por correo. Solo los impuestos a la propiedad se pueden pagar en el portal en línea.",
+     "Los pagos atrasados tienen interés desde la fecha de vencimiento: 8 por ciento sobre los primeros $1,500 de atraso y 18 por ciento sobre el resto."
+    ],
+    "contact": [
+     {
+      "label": "Recaudadora de Impuestos, Linda Pellicier",
+      "value": "201-587-2914",
+      "href": "tel:+12015872914"
+     },
+     {
+      "label": "Oficina de Recaudación",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-tax-collectors-office/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "tax-assessor",
+   "keywords": {
+    "en": [
+     "tax assessor",
+     "assessment",
+     "appeal my assessment",
+     "tax appeal",
+     "senior deduction",
+     "veteran deduction",
+     "property tax deduction",
+     "senior freeze"
+    ],
+    "es": [
+     "tasador de impuestos",
+     "evaluacion",
+     "apelar mi evaluacion",
+     "apelacion de impuestos",
+     "deduccion para jubilados",
+     "congelamiento de impuestos"
+    ]
+   },
+   "en": {
+    "lead": "The Tax Assessor's Office values property for taxation and handles assessment appeals and deduction claims.",
+    "details": [
+     "Arthur B. Carlson, Jr. is the Tax Assessor and Patricia Esteves is the Assistant Tax Assessor.",
+     "Senior citizen, veteran and disabled person deduction forms are available through the Tax Collector and Assessor pages. The Senior Freeze filing deadline and income limits are posted on the Tax Collector page."
+    ],
+    "contact": [
+     {
+      "label": "Tax Assessor's Office",
+      "value": "(201) 350-2110 Ext. 2922",
+      "href": "tel:+12013502110"
+     },
+     {
+      "label": "Tax Assessor's Office",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La Oficina del Tasador de Impuestos valúa las propiedades para los impuestos y se encarga de las apelaciones de evaluación y las deducciones.",
+    "details": [
+     "Arthur B. Carlson, Jr. es el Tasador de Impuestos y Patricia Esteves es la Tasadora Asistente.",
+     "Los formularios de deducción para jubilados, veteranos y personas discapacitadas están en las páginas del Recaudador y del Tasador. La fecha límite y los límites de ingresos del programa Senior Freeze están en la página del Recaudador."
+    ],
+    "contact": [
+     {
+      "label": "Oficina del Tasador de Impuestos",
+      "value": "(201) 350-2110 Ext. 2922",
+      "href": "tel:+12013502110"
+     },
+     {
+      "label": "Oficina del Tasador de Impuestos",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-tax-assessor/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "water-bill",
+   "keywords": {
+    "en": [
+     "water bill",
+     "pay my water bill",
+     "water department",
+     "water billing",
+     "water service",
+     "water shutoff"
+    ],
+    "es": [
+     "factura de agua",
+     "pagar mi factura de agua",
+     "departamento de agua",
+     "servicio de agua"
+    ]
+   },
+   "en": {
+    "lead": "The Water Department handles water billing and service at the Municipal Complex.",
+    "details": [
+     "For a water emergency after hours, such as a main break, call the Police Department non-emergency line and they will reach the on-call crew."
+    ],
+    "contact": [
+     {
+      "label": "Water Department",
+      "value": "201-587-2905",
+      "href": "tel:+12015872905"
+     },
+     {
+      "label": "Police non-emergency, after hours",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El Departamento de Agua se encarga de la facturación y el servicio de agua en el Complejo Municipal.",
+    "details": [
+     "Para una emergencia de agua fuera de horario, como la rotura de una tubería principal, llame a la línea no urgente de la Policía y ellos contactarán al equipo de guardia."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Agua",
+      "value": "201-587-2905",
+      "href": "tel:+12015872905"
+     },
+     {
+      "label": "Policía, no urgente, fuera de horario",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-water-department/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "garbage",
+   "keywords": {
+    "en": [
+     "garbage",
+     "trash pickup",
+     "trash",
+     "bulk pickup",
+     "bulk items",
+     "couch pickup",
+     "mattress pickup",
+     "garbage schedule"
+    ],
+    "es": [
+     "basura",
+     "recogida de basura",
+     "recogida de bultos",
+     "muebles viejos",
+     "colchon"
+    ]
+   },
+   "en": {
+    "lead": "Garbage, including bulk items, is picked up every Wednesday and Saturday for the whole township, excluding holidays.",
+    "details": [
+     "Bulk items picked up with regular garbage include couches, chairs, mattresses, box springs, dressers and tables. Collection is by Gaeta Recycling.",
+     "White goods, scrap metal, electronics and computers are different: those are picked up by appointment only through the Department of Public Works.",
+     "If a holiday or emergency changes pickup, the township posts the modified schedule on its website and social media."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "DPW",
+      "value": "251 2nd Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La basura, incluidos los artículos grandes, se recoge todos los miércoles y sábados en todo el municipio, excepto días festivos.",
+    "details": [
+     "Los artículos grandes que se recogen con la basura regular incluyen sofás, sillas, colchones, bases de cama, cómodas y mesas. La recogida la hace Gaeta Recycling.",
+     "Los electrodomésticos grandes, la chatarra, los electrónicos y las computadoras son diferentes: se recogen solo con cita a través del Departamento de Obras Públicas.",
+     "Si un día festivo o una emergencia cambia la recogida, el municipio publica el horario modificado en su sitio web y redes sociales."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Obras Públicas",
+      "value": "251 2nd Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/dpw/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "recycling",
+   "keywords": {
+    "en": [
+     "recycling",
+     "recycle",
+     "recycling schedule",
+     "recycling can",
+     "commingled",
+     "newspaper pickup"
+    ],
+    "es": [
+     "reciclaje",
+     "reciclar",
+     "horario de reciclaje",
+     "contenedor de reciclaje"
+    ]
+   },
+   "en": {
+    "lead": "Recycling is collected on Fridays, alternating between commingled items and newspaper and paper, on the township's published schedule.",
+    "details": [
+     "You can look up trash, recycling and special pickups for your street on the DPW page of the township website.",
+     "Recycling cans cost $11.00 and are paid for and picked up at the Municipal Complex, 55 Mayhill Street."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El reciclaje se recoge los viernes, alternando entre materiales mezclados y periódicos y papel, según el calendario publicado por el municipio.",
+    "details": [
+     "Puede consultar la recogida de basura, reciclaje y recogidas especiales para su calle en la página de Obras Públicas del sitio web del municipio.",
+     "Los contenedores de reciclaje cuestan $11.00 y se pagan y recogen en el Complejo Municipal, 55 Mayhill Street."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/dpw/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "yard-waste",
+   "keywords": {
+    "en": [
+     "yard waste",
+     "leaves",
+     "leaf pickup",
+     "grass clippings",
+     "branches",
+     "leaf bags"
+    ],
+    "es": [
+     "desechos de jardin",
+     "hojas",
+     "recogida de hojas",
+     "recortes de cesped",
+     "ramas"
+    ]
+   },
+   "en": {
+    "lead": "Yard waste is picked up by section: Section 1 on Monday, Section 2 on Tuesday, Section 3 on Wednesday and Section 4 on Thursday.",
+    "details": [
+     "Yard waste must be in a container or biodegradable bag, no more than 30 pounds each, at the curb no earlier than 7:00 PM the night before your day.",
+     "Leaf collection runs November 1 to December 10 on your yard waste day. Leaves must be bagged or in containers; loose leaves are not collected.",
+     "The DPW page lists which streets fall in each section."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los desechos de jardín se recogen por sección: Sección 1 el lunes, Sección 2 el martes, Sección 3 el miércoles y Sección 4 el jueves.",
+    "details": [
+     "Los desechos deben estar en un contenedor o bolsa biodegradable, de no más de 30 libras cada uno, en la acera no antes de las 7:00 PM de la noche anterior a su día.",
+     "La recogida de hojas es del 1 de noviembre al 10 de diciembre, el mismo día de sus desechos de jardín. Las hojas deben estar embolsadas o en contenedores; no se recogen hojas sueltas.",
+     "La página de Obras Públicas indica qué calles están en cada sección."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/dpw/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "permits",
+   "keywords": {
+    "en": [
+     "permit",
+     "building permit",
+     "construction permit",
+     "renovation permit",
+     "building department",
+     "inspections",
+     "certificate of occupancy"
+    ],
+    "es": [
+     "permiso",
+     "permiso de construccion",
+     "departamento de construccion",
+     "inspecciones"
+    ]
+   },
+   "en": {
+    "lead": "Building and construction permits go through the Building Department.",
+    "details": [
+     "Call the Building Department before starting work to confirm whether your project needs a permit and which forms apply. Permit forms are also on the township forms page."
+    ],
+    "contact": [
+     {
+      "label": "Building Department",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
+     },
+     {
+      "label": "Building Department",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los permisos de construcción se tramitan en el Departamento de Construcción.",
+    "details": [
+     "Llame al Departamento de Construcción antes de empezar el trabajo para confirmar si su proyecto necesita un permiso y qué formularios aplican. Los formularios también están en la página de formularios del municipio."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Construcción",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
+     },
+     {
+      "label": "Departamento de Construcción",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/building-department/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "court",
+   "keywords": {
+    "en": [
+     "municipal court",
+     "traffic ticket",
+     "pay my ticket",
+     "court date",
+     "parking ticket",
+     "summons"
+    ],
+    "es": [
+     "corte municipal",
+     "multa de transito",
+     "pagar mi multa",
+     "fecha de corte",
+     "multa de estacionamiento"
+    ]
+   },
+   "en": {
+    "lead": "The Saddle Brook Municipal Court handles traffic tickets, parking tickets and local ordinance cases.",
+    "details": [
+     "New Jersey municipal court tickets can usually be paid online through NJMCdirect. For questions about a court date or a ticket, call the court office."
+    ],
+    "contact": [
+     {
+      "label": "Municipal Court",
+      "value": "201-587-2930",
+      "href": "tel:+12015872930"
+     },
+     {
+      "label": "Municipal Court",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La Corte Municipal de Saddle Brook se encarga de multas de tránsito, multas de estacionamiento y casos de ordenanzas locales.",
+    "details": [
+     "Las multas de las cortes municipales de New Jersey generalmente se pueden pagar en línea en NJMCdirect. Para preguntas sobre una fecha de corte o una multa, llame a la oficina de la corte."
+    ],
+    "contact": [
+     {
+      "label": "Corte Municipal",
+      "value": "201-587-2930",
+      "href": "tel:+12015872930"
+     },
+     {
+      "label": "Corte Municipal",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/municipal-court/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "police",
+   "keywords": {
+    "en": [
+     "police",
+     "police department",
+     "non emergency",
+     "police report",
+     "alarm permit",
+     "police records"
+    ],
+    "es": [
+     "policia",
+     "departamento de policia",
+     "no urgente",
+     "informe policial",
+     "permiso de alarma"
+    ]
+   },
+   "en": {
+    "lead": "For any emergency, call 911. For everything else, the Saddle Brook Police Department non-emergency number is 201-843-7000.",
+    "details": [
+     "The Police Department is at 63 Market Street. Alarm permit forms are on the township forms page, and police records can be reached at 201-587-2923."
+    ],
+    "contact": [
+     {
+      "label": "Police non-emergency",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Police Records",
+      "value": "201-587-2923",
+      "href": "tel:+12015872923"
+     },
+     {
+      "label": "Police Department",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para cualquier emergencia, llame al 911. Para todo lo demás, el número no urgente del Departamento de Policía de Saddle Brook es 201-843-7000.",
+    "details": [
+     "El Departamento de Policía está en 63 Market Street. Los formularios de permiso de alarma están en la página de formularios del municipio, y los registros policiales están en el 201-587-2923."
+    ],
+    "contact": [
+     {
+      "label": "Policía, no urgente",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Registros Policiales",
+      "value": "201-587-2923",
+      "href": "tel:+12015872923"
+     },
+     {
+      "label": "Departamento de Policía",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-police-department/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "fire",
+   "keywords": {
+    "en": [
+     "fire department",
+     "fire prevention",
+     "smoke detector",
+     "fire inspection",
+     "fire code"
+    ],
+    "es": [
+     "bomberos",
+     "prevencion de incendios",
+     "detector de humo",
+     "inspeccion de incendios"
+    ]
+   },
+   "en": {
+    "lead": "For any fire or emergency, call 911. The Saddle Brook Fire Department and Fire Prevention Bureau handle fire safety inspections and code questions.",
+    "details": [
+     "Smoke alarm and fire prevention questions go to the Fire Prevention Bureau through Town Hall."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Fire Prevention Bureau",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para cualquier incendio o emergencia, llame al 911. El Departamento de Bomberos y la Oficina de Prevención de Incendios de Saddle Brook se encargan de las inspecciones de seguridad y preguntas del código.",
+    "details": [
+     "Las preguntas sobre alarmas de humo y prevención de incendios van a la Oficina de Prevención a través del Ayuntamiento."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Oficina de Prevención de Incendios",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/departments/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "health-registrar",
+   "keywords": {
+    "en": [
+     "birth certificate",
+     "marriage license",
+     "death certificate",
+     "vital records",
+     "registrar",
+     "health department",
+     "marriage certificate"
+    ],
+    "es": [
+     "certificado de nacimiento",
+     "licencia de matrimonio",
+     "certificado de defuncion",
+     "registros vitales",
+     "departamento de salud"
+    ]
+   },
+   "en": {
+    "lead": "Birth, marriage and death records and marriage licenses are handled by the Health Department and Registrar's Office at Town Hall.",
+    "details": [
+     "The Registrar keeps vital records for events that happened in Saddle Brook. For records from another town, contact that town's registrar or the New Jersey Department of Health."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Health Department and Registrar's Office",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los registros de nacimiento, matrimonio y defunción y las licencias de matrimonio se tramitan en el Departamento de Salud y la Oficina del Registrador, en el Ayuntamiento.",
+    "details": [
+     "El Registrador guarda los registros vitales de eventos que ocurrieron en Saddle Brook. Para registros de otro pueblo, contacte al registrador de ese pueblo o al Departamento de Salud de New Jersey."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Departamento de Salud y Oficina del Registrador",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/health-department-and-registrar/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "pet-license",
+   "keywords": {
+    "en": [
+     "dog license",
+     "pet license",
+     "cat license",
+     "license my dog",
+     "dog registration"
+    ],
+    "es": [
+     "licencia para perros",
+     "licencia para mascotas",
+     "licencia para gatos",
+     "registrar mi perro"
+    ]
+   },
+   "en": {
+    "lead": "Dog and cat licenses are handled through the Health Department. Call Tracy Nafash at 201-843-7100 for pet license questions.",
+    "details": [
+     "New Jersey requires a current rabies vaccination for a dog license."
+    ],
+    "contact": [
+     {
+      "label": "Pet licensing",
+      "value": "201-843-7100",
+      "href": "tel:+12018437100"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las licencias para perros y gatos se tramitan en el Departamento de Salud. Llame a Tracy Nafash al 201-843-7100 para preguntas sobre licencias de mascotas.",
+    "details": [
+     "New Jersey requiere una vacuna contra la rabia vigente para la licencia de un perro."
+    ],
+    "contact": [
+     {
+      "label": "Licencias de mascotas",
+      "value": "201-843-7100",
+      "href": "tel:+12018437100"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/health-department-and-registrar/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "recreation",
+   "keywords": {
+    "en": [
+     "recreation",
+     "rec department",
+     "youth sports",
+     "summer camp",
+     "recreation programs",
+     "sign up for sports"
+    ],
+    "es": [
+     "recreacion",
+     "departamento de recreacion",
+     "deportes juveniles",
+     "campamento de verano",
+     "programas de recreacion"
+    ]
+   },
+   "en": {
+    "lead": "The Recreation Department runs township recreation programs and youth activities. The Recreation Director is Andrew Gallo.",
+    "details": [
+     "Program announcements and sign-ups are posted on the Recreation page of the township website."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Recreation Department",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El Departamento de Recreación administra los programas recreativos y las actividades juveniles del municipio. El Director de Recreación es Andrew Gallo.",
+    "details": [
+     "Los anuncios e inscripciones de programas se publican en la página de Recreación del sitio web del municipio."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Departamento de Recreación",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/recreation-department/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "senior-center",
+   "keywords": {
+    "en": [
+     "senior center",
+     "seniors",
+     "senior programs",
+     "senior transportation"
+    ],
+    "es": [
+     "centro de jubilados",
+     "adultos mayores",
+     "programas para jubilados"
+    ]
+   },
+   "en": {
+    "lead": "The Saddle Brook Senior Center is at 8 Caldwell Avenue and is open Monday to Friday, 8:00 AM to 3:30 PM.",
+    "details": [
+     "The Senior Center Director is Karen D'Arminio. Senior newsletters are archived on the township website."
+    ],
+    "contact": [
+     {
+      "label": "Senior Center",
+      "value": "201-845-4594",
+      "href": "tel:+12018454594"
+     },
+     {
+      "label": "Senior Center",
+      "value": "8 Caldwell Avenue, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El Centro de Adultos Mayores de Saddle Brook está en 8 Caldwell Avenue y abre de lunes a viernes, de 8:00 AM a 3:30 PM.",
+    "details": [
+     "La Directora del Centro es Karen D'Arminio. Los boletines para adultos mayores están archivados en el sitio web del municipio."
+    ],
+    "contact": [
+     {
+      "label": "Centro de Adultos Mayores",
+      "value": "201-845-4594",
+      "href": "tel:+12018454594"
+     },
+     {
+      "label": "Centro de Adultos Mayores",
+      "value": "8 Caldwell Avenue, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/saddle-brook-senior-center/home/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "library",
+   "keywords": {
+    "en": [
+     "library",
+     "public library",
+     "library hours",
+     "library card"
+    ],
+    "es": [
+     "biblioteca",
+     "biblioteca publica",
+     "horario de la biblioteca",
+     "tarjeta de biblioteca"
+    ]
+   },
+   "en": {
+    "lead": "The Saddle Brook Free Public Library is at 340 Mayhill Street.",
+    "details": [
+     "Call the library for hours, programs and library card questions."
+    ],
+    "contact": [
+     {
+      "label": "Saddle Brook Free Public Library",
+      "value": "201-843-3287",
+      "href": "tel:+12018433287"
+     },
+     {
+      "label": "Library",
+      "value": "340 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La Biblioteca Pública Gratuita de Saddle Brook está en 340 Mayhill Street.",
+    "details": [
+     "Llame a la biblioteca para horarios, programas y preguntas sobre la tarjeta de biblioteca."
+    ],
+    "contact": [
+     {
+      "label": "Biblioteca Pública de Saddle Brook",
+      "value": "201-843-3287",
+      "href": "tel:+12018433287"
+     },
+     {
+      "label": "Biblioteca",
+      "value": "340 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "schools",
+   "keywords": {
+    "en": [
+     "school",
+     "schools",
+     "school district",
+     "board of education",
+     "school registration"
+    ],
+    "es": [
+     "escuela",
+     "escuelas",
+     "distrito escolar",
+     "junta de educacion"
+    ]
+   },
+   "en": {
+    "lead": "Saddle Brook Public Schools are run by the Saddle Brook School District and its Board of Education, separate from Town Hall.",
+    "details": [
+     "Town Hall cannot answer school registration, busing or student questions. Contact the school district directly; the township site links to Saddle Brook Public Schools from its departments list."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las Escuelas Públicas de Saddle Brook las administra el Distrito Escolar de Saddle Brook y su Junta de Educación, separados del Ayuntamiento.",
+    "details": [
+     "El Ayuntamiento no puede responder preguntas de inscripción escolar, transporte o estudiantes. Contacte directamente al distrito escolar; el sitio del municipio enlaza a las Escuelas Públicas desde su lista de departamentos."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/departments/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "snow-parking",
+   "keywords": {
+    "en": [
+     "snow",
+     "snow parking",
+     "park during snow",
+     "snow emergency",
+     "street parking snow"
+    ],
+    "es": [
+     "nieve",
+     "estacionamiento con nieve",
+     "emergencia por nieve"
+    ]
+   },
+   "en": {
+    "lead": "When snow falls and streets are snow covered, township ordinance prohibits parking on either side of the street until the streets are cleared.",
+    "details": [
+     "The rule was amended February 20, 2025. It keeps plows and the street sweeper able to get through."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Cuando cae nieve y las calles están cubiertas, la ordenanza del municipio prohíbe estacionar en cualquier lado de la calle hasta que las calles estén despejadas.",
+    "details": [
+     "La regla fue enmendada el 20 de febrero de 2025. Permite que las máquinas quitanieves y la barredora puedan pasar."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/dpw/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "directory",
+   "keywords": {
+    "en": [
+     "phone number",
+     "directory",
+     "contact",
+     "phone directory",
+     "who do i call",
+     "department phone numbers"
+    ],
+    "es": [
+     "numero de telefono",
+     "directorio",
+     "contacto",
+     "a quien llamo",
+     "telefonos de departamentos"
+    ]
+   },
+   "en": {
+    "lead": "Here are the main township numbers: Town Hall 201-587-2900, HELP line 201-587-2912, Clerk 201-587-2901, Tax Collector 201-587-2914, Water 201-587-2905, Building Department 201-843-7111, DPW 201-843-3064, Police non-emergency 201-843-7000, Municipal Court 201-587-2930, Senior Center 201-845-4594, Library 201-843-3287.",
+    "details": [
+     "For anything not listed, the HELP line can route you to the right office. In an emergency, always call 911."
+    ],
+    "contact": [
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Estos son los números principales del municipio: Ayuntamiento 201-587-2900, línea HELP 201-587-2912, Secretario 201-587-2901, Recaudación de Impuestos 201-587-2914, Agua 201-587-2905, Construcción 201-843-7111, Obras Públicas 201-843-3064, Policía no urgente 201-843-7000, Corte Municipal 201-587-2930, Centro de Adultos Mayores 201-845-4594, Biblioteca 201-843-3287.",
+    "details": [
+     "Para cualquier cosa que no esté en la lista, la línea HELP puede dirigirle a la oficina correcta. En una emergencia, llame siempre al 911."
+    ],
+    "contact": [
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/township-directory-2/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "events",
+   "keywords": {
+    "en": [
+     "events",
+     "community calendar",
+     "town events",
+     "what is happening",
+     "food pantry"
+    ],
+    "es": [
+     "eventos",
+     "calendario comunitario",
+     "eventos del pueblo",
+     "que hay",
+     "despensa de alimentos"
+    ]
+   },
+   "en": {
+    "lead": "Township events are posted on the community calendar on the township website, and residents can submit events with the Saddle Brook Community Events Form.",
+    "details": [
+     "The Saddle Brook Community Food Pantry accepts donations at the Municipal Complex, 55 Mayhill Street, and at the Free Public Library, 340 Mayhill Street."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Town Hall",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los eventos del municipio se publican en el calendario comunitario del sitio web, y los residentes pueden enviar eventos con el Formulario de Eventos Comunitarios de Saddle Brook.",
+    "details": [
+     "La Despensa Comunitaria de Alimentos de Saddle Brook acepta donaciones en el Complejo Municipal, 55 Mayhill Street, y en la Biblioteca Pública, 340 Mayhill Street."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Ayuntamiento",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-pothole",
+   "keywords": {
+    "en": [
+     "pothole",
+     "report a pothole",
+     "hole in the road",
+     "road damage"
+    ],
+    "es": [
+     "bache",
+     "reportar un bache",
+     "hoyo en la calle",
+     "calle danada"
+    ]
+   },
+   "en": {
+    "lead": "To report a pothole, call the Department of Public Works with the street and the nearest cross street or house number.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township.",
+     "For a pothole on a Bergen County road, the township will route you to the county."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para reportar un bache, llame al Departamento de Obras Públicas con la calle y la esquina o número de casa más cercano.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
+     "Para un bache en una carretera del Condado de Bergen, el municipio le dirigirá al condado."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-streetlight",
+   "keywords": {
+    "en": [
+     "streetlight out",
+     "street light",
+     "report a streetlight",
+     "streetlight"
+    ],
+    "es": [
+     "alumbrado",
+     "farola apagada",
+     "reportar una farola",
+     "luz de la calle"
+    ]
+   },
+   "en": {
+    "lead": "To report a streetlight out, call Town Hall with the street, the nearest house number, and the number on the pole if you can see it.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para reportar una farola apagada, llame al Ayuntamiento con la calle, el número de casa más cercano, y el número del poste si puede verlo.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-flooding",
+   "keywords": {
+    "en": [
+     "flooding",
+     "flood",
+     "standing water",
+     "drain blocked",
+     "storm drain",
+     "sewer backup"
+    ],
+    "es": [
+     "inundacion",
+     "agua estancada",
+     "desague tapado",
+     "alcantarillado"
+    ]
+   },
+   "en": {
+    "lead": "For active flooding or a sewer backup, call the Department of Public Works during the day, or the Police non-emergency line after hours.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township.",
+     "If water is entering your home or anyone is in danger, call 911."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Police non-emergency, after hours",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para una inundación activa o un retorno de alcantarillado, llame al Departamento de Obras Públicas durante el día, o a la línea no urgente de la Policía fuera de horario.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
+     "Si el agua está entrando en su casa o alguien está en peligro, llame al 911."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Policía, no urgente, fuera de horario",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-missed-pickup",
+   "keywords": {
+    "en": [
+     "missed pickup",
+     "garbage not picked up",
+     "trash was not collected",
+     "missed garbage",
+     "missed recycling"
+    ],
+    "es": [
+     "no recogieron",
+     "basura no recogida",
+     "no pasaron por la basura",
+     "reciclaje no recogido"
+    ]
+   },
+   "en": {
+    "lead": "If your garbage or recycling was missed, call the Department of Public Works.",
+    "details": [
+     "Garbage is collected Wednesdays and Saturdays and recycling on Fridays, so first check that it was your collection day and that items were at the curb on time."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Si no recogieron su basura o reciclaje, llame al Departamento de Obras Públicas.",
+    "details": [
+     "La basura se recoge los miércoles y sábados y el reciclaje los viernes, así que primero confirme que era su día de recogida y que los artículos estaban en la acera a tiempo."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-property",
+   "keywords": {
+    "en": [
+     "property maintenance",
+     "tall grass",
+     "overgrown lawn",
+     "junk in yard",
+     "code violation",
+     "unkept property"
+    ],
+    "es": [
+     "mantenimiento de propiedad",
+     "cesped alto",
+     "codigo",
+     "propiedad descuidada",
+     "basura en el patio"
+    ]
+   },
+   "en": {
+    "lead": "Property maintenance complaints go to Town Hall, which routes them to the right inspector.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las quejas de mantenimiento de propiedad van al Ayuntamiento, que las dirige al inspector correcto.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-noise",
+   "keywords": {
+    "en": [
+     "noise complaint",
+     "loud noise",
+     "noise",
+     "barking dog"
+    ],
+    "es": [
+     "queja de ruido",
+     "ruido fuerte",
+     "ruido",
+     "perro ladrando"
+    ]
+   },
+   "en": {
+    "lead": "For noise happening right now, call the Police Department non-emergency line. For an ongoing noise or ordinance issue, Town Hall can route it during business hours.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary first if it is an ongoing issue. This chat prepares your report only; the report is filed when you contact the township."
+    ],
+    "contact": [
+     {
+      "label": "Police non-emergency",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Para un ruido que está ocurriendo ahora, llame a la línea no urgente del Departamento de Policía. Para un problema continuo de ruido u ordenanza, el Ayuntamiento puede dirigirlo en horario de oficina.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero si es un problema continuo. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+    ],
+    "contact": [
+     {
+      "label": "Policía, no urgente",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-speeding",
+   "keywords": {
+    "en": [
+     "speeding",
+     "speeding cars",
+     "traffic complaint",
+     "dangerous driving",
+     "stop sign"
+    ],
+    "es": [
+     "exceso de velocidad",
+     "autos a velocidad",
+     "queja de transito",
+     "conduccion peligrosa"
+    ]
+   },
+   "en": {
+    "lead": "Speeding and traffic complaints go to the Saddle Brook Police Department.",
+    "details": [
+     "Use the Report an issue tool on this page to prepare a summary with the street, the times of day it happens, and direction of travel, then call it in. This chat prepares your report only; the report is filed when you contact the township."
+    ],
+    "contact": [
+     {
+      "label": "Police non-emergency",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las quejas de exceso de velocidad y tránsito van al Departamento de Policía de Saddle Brook.",
+    "details": [
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen con la calle, las horas en que ocurre y la dirección del tránsito, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+    ],
+    "contact": [
+     {
+      "label": "Policía, no urgente",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "report-issue",
+   "keywords": {
+    "en": [
+     "report an issue",
+     "report a problem",
+     "report something",
+     "file a complaint",
+     "how do i report"
+    ],
+    "es": [
+     "reportar un problema",
+     "reportar algo",
+     "presentar una queja",
+     "como reporto"
+    ]
+   },
+   "en": {
+    "lead": "Use the Report an issue tool on this page: pick the type of issue, add the exact location and a short description, and this chat prepares a summary for you.",
+    "details": [
+     "This chat does not send or save your report. The report is filed when you call the department number shown with your summary, or the township HELP line.",
+     "In an emergency, always call 911 instead."
+    ],
+    "contact": [
+     {
+      "label": "Township HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Use la herramienta Reportar un problema en esta página: elija el tipo de problema, agregue la ubicación exacta y una descripción breve, y este chat prepara un resumen para usted.",
+    "details": [
+     "Este chat no envía ni guarda su reporte. El reporte se presenta cuando usted llama al número del departamento que se muestra con su resumen, o a la línea HELP del municipio.",
+     "En una emergencia, llame siempre al 911."
+    ],
+    "contact": [
+     {
+      "label": "Línea de ayuda HELP del municipio",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
+  },
+  {
+   "id": "handicap-parking",
+   "keywords": {
+    "en": [
+     "handicap parking",
+     "disabled parking",
+     "disability placard",
+     "handicap placard",
+     "accessible parking"
+    ],
+    "es": [
+     "estacionamiento para discapacitados",
+     "cartel para discapacitados",
+     "placa para discapacitados",
+     "estacionamiento accesible"
+    ]
+   },
+   "en": {
+    "lead": "Permanent disability placards and wheelchair symbol plates come from the NJ Motor Vehicle Commission, not Town Hall.",
+    "details": [
+     "Complete Form SP-41, certified by a medical practitioner. There is no fee, and you recertify every 3 years.",
+     "For a temporary placard, apply through the Saddle Brook Police Department with a physician-certified application."
+    ],
+    "contact": [
+     {
+      "label": "Police non-emergency",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Los carteles permanentes de discapacidad y las placas con el símbolo de silla de ruedas los emite la Comisión de Vehículos Motorizados de NJ, no el Ayuntamiento.",
+    "details": [
+     "Complete el Formulario SP-41, certificado por un profesional médico. No tiene costo, y se recertifica cada 3 años.",
+     "Para un cartel temporal, solicítelo a través del Departamento de Policía de Saddle Brook con una solicitud certificada por un médico."
+    ],
+    "contact": [
+     {
+      "label": "Policía, no urgente",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://www.nj.gov/mvc/vehicletopics/disability.htm",
+   "sourceLabel": "NJ Motor Vehicle Commission"
+  }
+ ]
+}

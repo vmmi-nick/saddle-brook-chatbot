@@ -1,0 +1,83 @@
+{
+ "governingRule": "Official government sites only. Each topic answers to whoever owns that topic: township questions to the township, license and placard questions to the NJ MVC, county road questions to Bergen County. No blogs, news articles, forums or search snippets treated as fact. If no listed source covers a question, fall back to the Township HELP line instead of answering from model memory.",
+ "notApproved": [
+  {
+   "approved": false,
+   "domain": "gaetarecycling.com",
+   "note": "Gaeta Recycling is the township's contracted hauler, but it is NOT an approved source for this chatbot. Collection facts come from the township DPW page. Discussion only."
+  },
+  {
+   "approved": false,
+   "domain": "saddlebrooknj.us tax assessor directory listing",
+   "note": "Known conflict on the township site itself: the Directory lists the Tax Assessor at (201) 587-2917 while the Tax Assessor department page lists (201) 350-2110 Ext. 2922. The bot uses the department page number and flags the conflict in the Master Q&A List."
+  }
+ ],
+ "policy": "Adding a source takes a deliberate admin edit and, in production, Clerk approval. The chatbot may only search, fetch and cite sources on this list.",
+ "ranking": "For local facts, township sources outrank county sources, which outrank state sources.",
+ "tiers": [
+  {
+   "name": "Township of Saddle Brook",
+   "tier": 1,
+   "sources": [
+    {
+     "approved": true,
+     "domain": "saddlebrooknj.us",
+     "scope": "Township government: departments, meetings, calendar, news, forms"
+    }
+   ]
+  },
+  {
+   "name": "Bergen County",
+   "tier": 2,
+   "sources": [
+    {
+     "approved": true,
+     "domain": "bergencounty.org",
+     "scope": "County roads, county parks, elections, county services, Board of Taxation"
+    }
+   ]
+  },
+  {
+   "name": "State of New Jersey",
+   "tier": 3,
+   "sources": [
+    {
+     "approved": true,
+     "domain": "nj.gov/mvc",
+     "scope": "NJ Motor Vehicle Commission: plates, disability placards, licenses"
+    },
+    {
+     "approved": true,
+     "domain": "njcourts.gov",
+     "scope": "NJ court system: tickets and municipal court process, NJMCdirect"
+    },
+    {
+     "approved": true,
+     "domain": "nj.gov",
+     "scope": "State programs that township pages point to"
+    }
+   ]
+  },
+  {
+   "name": "Federal, refer out only",
+   "tier": 4,
+   "sources": [
+    {
+     "approved": true,
+     "domain": "usa.gov",
+     "scope": "Federal programs, refer out only"
+    },
+    {
+     "approved": true,
+     "domain": "ssa.gov",
+     "scope": "Social Security, refer out only"
+    },
+    {
+     "approved": true,
+     "domain": "medicare.gov",
+     "scope": "Medicare, refer out only"
+    }
+   ]
+  }
+ ]
+}
