@@ -1,7 +1,7 @@
 {
- "helpDeskPhone": "201-587-2912",
- "helpDeskLabel": "Township HELP line",
- "lastChecked": "2026-11-22",
+ "helpDeskPhone": "201-587-2900",
+ "helpDeskLabel": "Town Hall main number",
+ "lastChecked": "2026-11-24",
  "townHall": {
   "address": "55 Mayhill Street, Saddle Brook, NJ 07663",
   "mainPhone": "201-587-2900"
@@ -16,20 +16,25 @@
      "when is town hall open",
      "municipal complex",
      "town hall address",
-     "where is town hall"
+     "where is town hall",
+     "help line",
+     "HELP line"
     ],
     "es": [
      "ayuntamiento",
      "horario del ayuntamiento",
      "direccion del ayuntamiento",
-     "complejo municipal"
+     "complejo municipal",
+     "linea help",
+     "linea de ayuda"
     ]
    },
    "en": {
     "lead": "Town Hall is at the Municipal Complex, 55 Mayhill Street, and is open Monday to Friday, 8:30 AM to 4:00 PM.",
     "details": [
      "Town Hall moved from 93 Market Street to 55 Mayhill Street. All municipal services, payments, meetings and appointments are at the new address.",
-     "The Department of Public Works keeps different hours: Monday to Friday, 7:00 AM to 3:30 PM."
+     "The Department of Public Works keeps different hours: Monday to Friday, 7:00 AM to 3:30 PM.",
+     "The HELP line, 201-587-2912, belongs to the Saddle Brook Community Partnership: residents who need assistance can leave a message for the coordinator there."
     ],
     "contact": [
      {
@@ -38,7 +43,7 @@
       "href": "tel:+12015872900"
      },
      {
-      "label": "Township HELP line",
+      "label": "Community Partnership HELP line",
       "value": "201-587-2912",
       "href": "tel:+12015872912"
      },
@@ -52,7 +57,8 @@
     "lead": "El Ayuntamiento está en el Complejo Municipal, 55 Mayhill Street, y abre de lunes a viernes, de 8:30 AM a 4:00 PM.",
     "details": [
      "El Ayuntamiento se mudó de 93 Market Street a 55 Mayhill Street. Todos los servicios municipales, pagos, reuniones y citas son en la nueva dirección.",
-     "El Departamento de Obras Públicas tiene otro horario: de lunes a viernes, de 7:00 AM a 3:30 PM."
+     "El Departamento de Obras Públicas tiene otro horario: de lunes a viernes, de 7:00 AM a 3:30 PM.",
+     "La línea HELP, 201-587-2912, es de Saddle Brook Community Partnership: los residentes que necesitan ayuda pueden dejar un mensaje para la coordinadora."
     ],
     "contact": [
      {
@@ -61,7 +67,7 @@
       "href": "tel:+12015872900"
      },
      {
-      "label": "Línea de ayuda HELP del municipio",
+      "label": "Línea HELP de Community Partnership",
       "value": "201-587-2912",
       "href": "tel:+12015872912"
      },
@@ -93,8 +99,8 @@
    "en": {
     "lead": "The mayor of Saddle Brook is Robert D. White.",
     "details": [
-     "Mayor White has served since 2015 and was re-elected on November 3, 2026.",
-     "The Mayor's Office runs the township HELP line for resident questions and concerns."
+     "Christine Genuario is the Secretary to the Mayor. The Mayor's Office can also be reached at 201-587-2902.",
+     "If you are a resident who needs assistance, the Community Partnership HELP line at 201-587-2912 takes messages for its coordinator."
     ],
     "contact": [
      {
@@ -103,7 +109,7 @@
       "href": "tel:+12015872903"
      },
      {
-      "label": "Township HELP line",
+      "label": "Community Partnership HELP line",
       "value": "201-587-2912",
       "href": "tel:+12015872912"
      },
@@ -117,8 +123,8 @@
    "es": {
     "lead": "El alcalde de Saddle Brook es Robert D. White.",
     "details": [
-     "El alcalde White sirve desde 2015 y fue reelegido el 3 de noviembre de 2026.",
-     "La Oficina del Alcalde administra la línea de ayuda HELP del municipio para preguntas e inquietudes de los residentes."
+     "Christine Genuario es la Secretaria del Alcalde. La Oficina del Alcalde también atiende en el 201-587-2902.",
+     "Si usted es un residente que necesita ayuda, la línea HELP de Community Partnership, 201-587-2912, recibe mensajes para su coordinadora."
     ],
     "contact": [
      {
@@ -127,7 +133,7 @@
       "href": "tel:+12015872903"
      },
      {
-      "label": "Línea de ayuda HELP del municipio",
+      "label": "Línea HELP de Community Partnership",
       "value": "201-587-2912",
       "href": "tel:+12015872912"
      },
@@ -220,6 +226,7 @@
    "en": {
     "lead": "Township Council work sessions are on the first Thursday of the month at 5:30 PM, and regular public meetings are on the third Thursday at 7:00 PM, at the Municipal Complex.",
     "details": [
+     "Formal action may be taken at any of these meetings, including work sessions.",
      "Agendas and minutes are posted on the township website, and the Township Clerk keeps the official records.",
      "Ask me for the next meeting and I will give you the exact date from the 2026 schedule."
     ],
@@ -238,6 +245,7 @@
    "es": {
     "lead": "Las sesiones de trabajo del Concejo Municipal son el primer jueves del mes a las 5:30 PM, y las reuniones públicas regulares son el tercer jueves a las 7:00 PM, en el Complejo Municipal.",
     "details": [
+     "Se puede tomar acción formal en cualquiera de estas reuniones, incluidas las sesiones de trabajo.",
      "Las agendas y actas se publican en el sitio web del municipio, y el Secretario Municipal guarda los registros oficiales.",
      "Pregúnteme por la próxima reunión y le daré la fecha exacta del calendario 2026."
     ],
@@ -275,7 +283,8 @@
    "en": {
     "lead": "The Township Clerk's Office handles council agendas, resolutions, minutes and ordinances, elections and voter registration, and many township licenses.",
     "details": [
-     "The Clerk is the liaison between residents and the Township Council and keeps the township's official records. Office hours are Monday to Friday, 8:30 AM to 4:00 PM."
+     "The Clerk is the liaison between residents and the Township Council and keeps the township's official records. Office hours are Monday to Friday, 8:30 AM to 4:00 PM.",
+     "The Clerk's Office also handles garage sale permits and raffle applications. Fax: 201-587-2908."
     ],
     "contact": [
      {
@@ -292,7 +301,8 @@
    "es": {
     "lead": "La Oficina del Secretario Municipal se encarga de las agendas, resoluciones, actas y ordenanzas del concejo, las elecciones y el registro de votantes, y muchas licencias del municipio.",
     "details": [
-     "El Secretario es el enlace entre los residentes y el Concejo Municipal y guarda los registros oficiales del municipio. El horario es de lunes a viernes, de 8:30 AM a 4:00 PM."
+     "El Secretario es el enlace entre los residentes y el Concejo Municipal y guarda los registros oficiales del municipio. El horario es de lunes a viernes, de 8:30 AM a 4:00 PM.",
+     "La Oficina del Secretario también tramita permisos de venta de garaje y solicitudes de rifas. Fax: 201-587-2908."
     ],
     "contact": [
      {
@@ -332,10 +342,10 @@
     ]
    },
    "en": {
-    "lead": "Voter registration in Saddle Brook runs through the Township Clerk's Office, and New Jersey elections are run with Bergen County.",
+    "lead": "Voter registration in Saddle Brook runs through the Township Clerk's Office.",
     "details": [
-     "Registration forms, including Spanish and Korean versions, are on the township forms page. Registration closes 21 days before an election in New Jersey.",
-     "For polling place and ballot questions, the Clerk's Office can point you to the right county listing."
+     "Registration forms, including Spanish and Korean versions, are on the township forms page.",
+     "The Clerk's Office also handles vote by mail ballot request forms, in English and Spanish."
     ],
     "contact": [
      {
@@ -351,10 +361,10 @@
     ]
    },
    "es": {
-    "lead": "El registro de votantes en Saddle Brook se hace a través de la Oficina del Secretario Municipal, y las elecciones de New Jersey se realizan junto con el Condado de Bergen.",
+    "lead": "El registro de votantes en Saddle Brook se hace a través de la Oficina del Secretario Municipal.",
     "details": [
-     "Los formularios de registro, incluidas las versiones en español y coreano, están en la página de formularios del municipio. El registro cierra 21 días antes de una elección en New Jersey.",
-     "Para preguntas sobre su lugar de votación y la boleta, la Oficina del Secretario puede indicarle el listado correcto del condado."
+     "Los formularios de registro, incluidas las versiones en español y coreano, están en la página de formularios del municipio.",
+     "La Oficina del Secretario también tramita los formularios de solicitud de voto por correo, en inglés y español."
     ],
     "contact": [
      {
@@ -392,7 +402,7 @@
    "en": {
     "lead": "Public records requests under OPRA go to the Township Clerk's Office, the township's custodian of records.",
     "details": [
-     "Submit the township OPRA form to the Clerk. The township generally has seven business days to respond under New Jersey law."
+     "Submit the township OPRA form to the Clerk. For police records, there is a separate Police Department OPRA form on the township forms page."
     ],
     "contact": [
      {
@@ -409,7 +419,7 @@
    "es": {
     "lead": "Las solicitudes de registros públicos bajo OPRA van a la Oficina del Secretario Municipal, el custodio de registros del municipio.",
     "details": [
-     "Presente el formulario OPRA del municipio al Secretario. Por ley de New Jersey, el municipio generalmente tiene siete días laborables para responder."
+     "Presente el formulario OPRA del municipio al Secretario. Para registros policiales, hay un formulario OPRA separado del Departamento de Policía en la página de formularios."
     ],
     "contact": [
      {
@@ -453,8 +463,9 @@
    "en": {
     "lead": "Property taxes are due February 1, May 1, August 1 and November 1, with a 10 day grace period. The Tax Collector is Linda Pellicier.",
     "details": [
-     "Taxes can be paid online through the township's property tax payment portal, in person at the Municipal Complex, or by mail. Only property taxes can be paid through the online portal.",
-     "Late payments are charged interest from the due date: 8 percent on the first $1,500 of the delinquency and 18 percent above that."
+     "Taxes can be paid online through Munidex, the township's payment portal, or in person at the Municipal Complex. Only property taxes can be paid through the online portal.",
+     "Late payments are charged interest from the due date: 8 percent on the first $1,500 of the delinquency and 18 percent above that. A delinquency over $10,000 still unpaid after December 31 carries an additional 6 percent penalty.",
+     "Senior citizen and veteran deduction forms and the Senior Freeze program are on the Tax Collector page of the township website."
     ],
     "contact": [
      {
@@ -471,8 +482,9 @@
    "es": {
     "lead": "Los impuestos a la propiedad vencen el 1 de febrero, 1 de mayo, 1 de agosto y 1 de noviembre, con un período de gracia de 10 días. La Recaudadora de Impuestos es Linda Pellicier.",
     "details": [
-     "Los impuestos se pueden pagar en línea en el portal de pagos del municipio, en persona en el Complejo Municipal, o por correo. Solo los impuestos a la propiedad se pueden pagar en el portal en línea.",
-     "Los pagos atrasados tienen interés desde la fecha de vencimiento: 8 por ciento sobre los primeros $1,500 de atraso y 18 por ciento sobre el resto."
+     "Los impuestos se pueden pagar en línea en Munidex, el portal de pagos del municipio, o en persona en el Complejo Municipal. Solo los impuestos a la propiedad se pueden pagar en el portal en línea.",
+     "Los pagos atrasados tienen interés desde la fecha de vencimiento: 8 por ciento sobre los primeros $1,500 de atraso y 18 por ciento sobre el resto. Un atraso mayor de $10,000 que siga sin pagarse después del 31 de diciembre tiene una multa adicional del 6 por ciento.",
+     "Los formularios de deducción para jubilados y veteranos y el programa Senior Freeze están en la página del Recaudador en el sitio del municipio."
     ],
     "contact": [
      {
@@ -515,7 +527,8 @@
     "lead": "The Tax Assessor's Office values property for taxation and handles assessment appeals and deduction claims.",
     "details": [
      "Arthur B. Carlson, Jr. is the Tax Assessor and Patricia Esteves is the Assistant Tax Assessor.",
-     "Senior citizen, veteran and disabled person deduction forms are available through the Tax Collector and Assessor pages. The Senior Freeze filing deadline and income limits are posted on the Tax Collector page."
+     "The Assessor's office is staffed on Tuesdays and Thursdays, 4:30 PM to 6:00 PM, and the Assessor is available by appointment.",
+     "Senior citizen, veteran and disabled person deduction forms are on the Tax Collector page. The Senior Freeze filing deadline and income limits are posted there too."
     ],
     "contact": [
      {
@@ -533,7 +546,8 @@
     "lead": "La Oficina del Tasador de Impuestos valúa las propiedades para los impuestos y se encarga de las apelaciones de evaluación y las deducciones.",
     "details": [
      "Arthur B. Carlson, Jr. es el Tasador de Impuestos y Patricia Esteves es la Tasadora Asistente.",
-     "Los formularios de deducción para jubilados, veteranos y personas discapacitadas están en las páginas del Recaudador y del Tasador. La fecha límite y los límites de ingresos del programa Senior Freeze están en la página del Recaudador."
+     "La oficina del Tasador atiende los martes y jueves, de 4:30 PM a 6:00 PM, y el Tasador atiende con cita.",
+     "Los formularios de deducción para jubilados, veteranos y personas discapacitadas están en la página del Recaudador. La fecha límite y los límites de ingresos del programa Senior Freeze también están allí."
     ],
     "contact": [
      {
@@ -569,9 +583,11 @@
     ]
    },
    "en": {
-    "lead": "The Water Department handles water billing and service at the Municipal Complex.",
+    "lead": "The Water Department handles water billing and service at the Municipal Complex. Water bills can be paid online through Munidex; only water bills can be paid through that link.",
     "details": [
-     "For a water emergency after hours, such as a main break, call the Police Department non-emergency line and they will reach the on-call crew."
+     "Water bills are sent out quarterly, in March, June, September and November. The billing clerk is Donna Kovalovsky.",
+     "The department also handles final water meter readings for home sales.",
+     "For a water emergency after hours, the township directs residents to the Saddle Brook Police Department at 201-843-7000."
     ],
     "contact": [
      {
@@ -580,16 +596,18 @@
       "href": "tel:+12015872905"
      },
      {
-      "label": "Police non-emergency, after hours",
+      "label": "Police Department, after hours",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      }
     ]
    },
    "es": {
-    "lead": "El Departamento de Agua se encarga de la facturación y el servicio de agua en el Complejo Municipal.",
+    "lead": "El Departamento de Agua se encarga de la facturación y el servicio de agua en el Complejo Municipal. Las facturas de agua se pueden pagar en línea en Munidex; solo las facturas de agua se pueden pagar en ese enlace.",
     "details": [
-     "Para una emergencia de agua fuera de horario, como la rotura de una tubería principal, llame a la línea no urgente de la Policía y ellos contactarán al equipo de guardia."
+     "Las facturas de agua se envían cada trimestre, en marzo, junio, septiembre y noviembre. La encargada de facturación es Donna Kovalovsky.",
+     "El departamento también hace las lecturas finales del medidor para la venta de casas.",
+     "Para una emergencia de agua fuera de horario, el municipio indica llamar al Departamento de Policía de Saddle Brook al 201-843-7000."
     ],
     "contact": [
      {
@@ -598,7 +616,7 @@
       "href": "tel:+12015872905"
      },
      {
-      "label": "Policía, no urgente, fuera de horario",
+      "label": "Policía, fuera de horario",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      }
@@ -632,7 +650,8 @@
     "lead": "Garbage, including bulk items, is picked up every Wednesday and Saturday for the whole township, excluding holidays.",
     "details": [
      "Bulk items picked up with regular garbage include couches, chairs, mattresses, box springs, dressers and tables. Collection is by Gaeta Recycling.",
-     "White goods, scrap metal, electronics and computers are different: those are picked up by appointment only through the Department of Public Works.",
+     "White goods, scrap metal, electronics and computers are different: those are picked up by appointment only through the Department of Public Works. To schedule, call DPW Monday to Friday, 8:30 AM to 3:30 PM.",
+     "You can look up trash, recycling and special pickups for your street on the DPW page of the township website.",
      "If a holiday or emergency changes pickup, the township posts the modified schedule on its website and social media."
     ],
     "contact": [
@@ -651,7 +670,8 @@
     "lead": "La basura, incluidos los artículos grandes, se recoge todos los miércoles y sábados en todo el municipio, excepto días festivos.",
     "details": [
      "Los artículos grandes que se recogen con la basura regular incluyen sofás, sillas, colchones, bases de cama, cómodas y mesas. La recogida la hace Gaeta Recycling.",
-     "Los electrodomésticos grandes, la chatarra, los electrónicos y las computadoras son diferentes: se recogen solo con cita a través del Departamento de Obras Públicas.",
+     "Los electrodomésticos grandes, la chatarra, los electrónicos y las computadoras son diferentes: se recogen solo con cita a través del Departamento de Obras Públicas. Para programar, llame a Obras Públicas de lunes a viernes, de 8:30 AM a 3:30 PM.",
+     "Puede consultar la recogida de basura, reciclaje y recogidas especiales para su calle en la página de Obras Públicas del sitio del municipio.",
      "Si un día festivo o una emergencia cambia la recogida, el municipio publica el horario modificado en su sitio web y redes sociales."
     ],
     "contact": [
@@ -691,7 +711,8 @@
     "lead": "Recycling is collected on Fridays, alternating between commingled items and newspaper and paper, on the township's published schedule.",
     "details": [
      "You can look up trash, recycling and special pickups for your street on the DPW page of the township website.",
-     "Recycling cans cost $11.00 and are paid for and picked up at the Municipal Complex, 55 Mayhill Street."
+     "For commingled recycling, only plastics numbered 1, 2 and 5 are accepted. Plastic bags are not accepted, and neither are Styrofoam, paint cans or containers numbered 3, 4, 6 or 7.",
+     "Recycling cans cost $11.00 and are paid for and picked up at the Municipal Complex, 55 Mayhill Street. Lids for the cans are not available."
     ],
     "contact": [
      {
@@ -710,7 +731,8 @@
     "lead": "El reciclaje se recoge los viernes, alternando entre materiales mezclados y periódicos y papel, según el calendario publicado por el municipio.",
     "details": [
      "Puede consultar la recogida de basura, reciclaje y recogidas especiales para su calle en la página de Obras Públicas del sitio web del municipio.",
-     "Los contenedores de reciclaje cuestan $11.00 y se pagan y recogen en el Complejo Municipal, 55 Mayhill Street."
+     "Para el reciclaje mezclado, solo se aceptan plásticos numerados 1, 2 y 5. No se aceptan bolsas de plástico, ni espuma de poliestireno, latas de pintura o envases numerados 3, 4, 6 o 7.",
+     "Los contenedores de reciclaje cuestan $11.00 y se pagan y recogen en el Complejo Municipal, 55 Mayhill Street. No hay tapas disponibles para los contenedores."
     ],
     "contact": [
      {
@@ -752,6 +774,8 @@
     "details": [
      "Yard waste must be in a container or biodegradable bag, no more than 30 pounds each, at the curb no earlier than 7:00 PM the night before your day.",
      "Leaf collection runs November 1 to December 10 on your yard waste day. Leaves must be bagged or in containers; loose leaves are not collected.",
+     "Branches must be cut to 4 feet or shorter, less than 3 inches thick, bundled and tied. Wood boards, fencing, stumps, dirt, concrete and tires are not accepted as yard waste.",
+     "If a holiday falls on your pickup day Monday to Thursday, DPW collects your yard waste on Friday instead.",
      "The DPW page lists which streets fall in each section."
     ],
     "contact": [
@@ -767,6 +791,8 @@
     "details": [
      "Los desechos deben estar en un contenedor o bolsa biodegradable, de no más de 30 libras cada uno, en la acera no antes de las 7:00 PM de la noche anterior a su día.",
      "La recogida de hojas es del 1 de noviembre al 10 de diciembre, el mismo día de sus desechos de jardín. Las hojas deben estar embolsadas o en contenedores; no se recogen hojas sueltas.",
+     "Las ramas deben cortarse a 4 pies o menos, con menos de 3 pulgadas de grosor, atadas en fardos. No se aceptan tablas de madera, cercas, tocones, tierra, concreto ni llantas como desechos de jardín.",
+     "Si un día festivo cae en su día de recogida de lunes a jueves, Obras Públicas recoge sus desechos de jardín el viernes.",
      "La página de Obras Públicas indica qué calles están en cada sección."
     ],
     "contact": [
@@ -802,7 +828,8 @@
    "en": {
     "lead": "Building and construction permits go through the Building Department.",
     "details": [
-     "Call the Building Department before starting work to confirm whether your project needs a permit and which forms apply. Permit forms are also on the township forms page."
+     "Call the Building Department before starting work to confirm whether your project needs a permit and which forms apply. Permit forms are also on the township forms page.",
+     "The Building Department is open Monday to Friday, 8:30 AM to 4:00 PM. Email: permits@saddlebrooknj.gov."
     ],
     "contact": [
      {
@@ -819,7 +846,8 @@
    "es": {
     "lead": "Los permisos de construcción se tramitan en el Departamento de Construcción.",
     "details": [
-     "Llame al Departamento de Construcción antes de empezar el trabajo para confirmar si su proyecto necesita un permiso y qué formularios aplican. Los formularios también están en la página de formularios del municipio."
+     "Llame al Departamento de Construcción antes de empezar el trabajo para confirmar si su proyecto necesita un permiso y qué formularios aplican. Los formularios también están en la página de formularios del municipio.",
+     "El Departamento de Construcción abre de lunes a viernes, de 8:30 AM a 4:00 PM. Correo: permits@saddlebrooknj.gov."
     ],
     "contact": [
      {
@@ -858,13 +886,20 @@
    "en": {
     "lead": "The Saddle Brook Municipal Court handles traffic tickets, parking tickets and local ordinance cases.",
     "details": [
-     "New Jersey municipal court tickets can usually be paid online through NJMCdirect. For questions about a court date or a ticket, call the court office."
+     "New Jersey municipal court tickets can usually be paid online through NJMCdirect. The Violations Bureau is open Monday to Friday, 8:30 AM to 4:00 PM.",
+     "For questions about whether you must appear in court or can pay the ticket, call the Violations Bureau at 201-843-7642.",
+     "Court sessions are currently held virtually. If you plead not guilty, let the court know at least 7 days before your court date."
     ],
     "contact": [
      {
       "label": "Municipal Court",
       "value": "201-587-2930",
       "href": "tel:+12015872930"
+     },
+     {
+      "label": "Violations Bureau",
+      "value": "201-843-7642",
+      "href": "tel:+12018437642"
      },
      {
       "label": "Municipal Court",
@@ -875,13 +910,20 @@
    "es": {
     "lead": "La Corte Municipal de Saddle Brook se encarga de multas de tránsito, multas de estacionamiento y casos de ordenanzas locales.",
     "details": [
-     "Las multas de las cortes municipales de New Jersey generalmente se pueden pagar en línea en NJMCdirect. Para preguntas sobre una fecha de corte o una multa, llame a la oficina de la corte."
+     "Las multas de las cortes municipales de New Jersey generalmente se pueden pagar en línea en NJMCdirect. La Oficina de Violaciones abre de lunes a viernes, de 8:30 AM a 4:00 PM.",
+     "Para preguntas sobre si debe presentarse en la corte o puede pagar la multa, llame a la Oficina de Violaciones al 201-843-7642.",
+     "Las sesiones de la corte actualmente son virtuales. Si se declara no culpable, avise a la corte al menos 7 días antes de su fecha."
     ],
     "contact": [
      {
       "label": "Corte Municipal",
       "value": "201-587-2930",
       "href": "tel:+12015872930"
+     },
+     {
+      "label": "Oficina de Violaciones",
+      "value": "201-843-7642",
+      "href": "tel:+12018437642"
      },
      {
       "label": "Corte Municipal",
@@ -914,7 +956,9 @@
    "en": {
     "lead": "For any emergency, call 911. For everything else, the Saddle Brook Police Department non-emergency number is 201-843-7000.",
     "details": [
-     "The Police Department is at 63 Market Street. Alarm permit forms are on the township forms page, and police records can be reached at 201-587-2923."
+     "The Police Department is at 63 Market Street. Alarm permit forms are on the township forms page; alarms must be registered and the permit renewed at the start of each year.",
+     "Police reports are available from the Records Bureau starting two business days after the report was made. Police records can be reached at 201-587-2923.",
+     "For Nixle traffic and safety alerts, text 07663 to 888777."
     ],
     "contact": [
      {
@@ -936,7 +980,9 @@
    "es": {
     "lead": "Para cualquier emergencia, llame al 911. Para todo lo demás, el número no urgente del Departamento de Policía de Saddle Brook es 201-843-7000.",
     "details": [
-     "El Departamento de Policía está en 63 Market Street. Los formularios de permiso de alarma están en la página de formularios del municipio, y los registros policiales están en el 201-587-2923."
+     "El Departamento de Policía está en 63 Market Street. Los formularios de permiso de alarma están en la página de formularios del municipio; las alarmas deben registrarse y el permiso renovarse al comienzo de cada año.",
+     "Los informes policiales están disponibles en la Oficina de Registros a partir de dos días laborables después de presentarse el informe. Los registros policiales están en el 201-587-2923.",
+     "Para alertas de tráfico y seguridad de Nixle, envíe el texto 07663 al 888777."
     ],
     "contact": [
      {
@@ -976,36 +1022,48 @@
     ]
    },
    "en": {
-    "lead": "For any fire or emergency, call 911. The Saddle Brook Fire Department and Fire Prevention Bureau handle fire safety inspections and code questions.",
+    "lead": "For any fire or emergency, call 911. For fire code and inspection questions, the township's Fire Code Official is Mike Seitz, at 201-587-8184.",
     "details": [
-     "Smoke alarm and fire prevention questions go to the Fire Prevention Bureau through Town Hall."
+     "The Saddle Brook Fire Department is all volunteer. Fire Chief Herman Wenzel leads the department.",
+     "Residents ages 16 to 55 can ask about joining at saddlebrookfiredept@gmail.com or at any firehouse on Tuesday nights after 7 PM."
     ],
     "contact": [
+     {
+      "label": "Fire Code Official, Mike Seitz",
+      "value": "201-587-8184",
+      "href": "tel:+12015878184"
+     },
+     {
+      "label": "Fire Code Official",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     },
      {
       "label": "Town Hall main number",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
-     },
-     {
-      "label": "Fire Prevention Bureau",
-      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
      }
     ]
    },
    "es": {
-    "lead": "Para cualquier incendio o emergencia, llame al 911. El Departamento de Bomberos y la Oficina de Prevención de Incendios de Saddle Brook se encargan de las inspecciones de seguridad y preguntas del código.",
+    "lead": "Para cualquier incendio o emergencia, llame al 911. Para preguntas del código de incendios e inspecciones, el Oficial del Código de Incendios del municipio es Mike Seitz, al 201-587-8184.",
     "details": [
-     "Las preguntas sobre alarmas de humo y prevención de incendios van a la Oficina de Prevención a través del Ayuntamiento."
+     "El Departamento de Bomberos de Saddle Brook es totalmente voluntario. El Jefe de Bomberos es Herman Wenzel.",
+     "Los residentes de 16 a 55 años pueden preguntar cómo unirse en saddlebrookfiredept@gmail.com o en cualquier estación los martes después de las 7 PM."
     ],
     "contact": [
+     {
+      "label": "Oficial del Código de Incendios, Mike Seitz",
+      "value": "201-587-8184",
+      "href": "tel:+12015878184"
+     },
+     {
+      "label": "Oficial del Código de Incendios",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
+     },
      {
       "label": "Número principal del Ayuntamiento",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
-     },
-     {
-      "label": "Oficina de Prevención de Incendios",
-      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
      }
     ]
    },
@@ -1035,7 +1093,9 @@
    "en": {
     "lead": "Birth, marriage and death records and marriage licenses are handled by the Health Department and Registrar's Office at Town Hall.",
     "details": [
-     "The Registrar keeps vital records for events that happened in Saddle Brook. For records from another town, contact that town's registrar or the New Jersey Department of Health."
+     "The Registrar is Tracy Nafash. Office hours are Monday to Friday, 8:30 AM to 4:00 PM.",
+     "For a marriage license, make an appointment with the Registrar at 201-587-2900. Bring photo ID, divorce papers if you were married before, and a witness. The fee is $28, processing takes about 3 days, and the license is good for 30 days.",
+     "Copies of birth, marriage and death certificates use the vital statistics application form linked on the Health Department page of the township website."
     ],
     "contact": [
      {
@@ -1052,7 +1112,9 @@
    "es": {
     "lead": "Los registros de nacimiento, matrimonio y defunción y las licencias de matrimonio se tramitan en el Departamento de Salud y la Oficina del Registrador, en el Ayuntamiento.",
     "details": [
-     "El Registrador guarda los registros vitales de eventos que ocurrieron en Saddle Brook. Para registros de otro pueblo, contacte al registrador de ese pueblo o al Departamento de Salud de New Jersey."
+     "La Registradora es Tracy Nafash. El horario es de lunes a viernes, de 8:30 AM a 4:00 PM.",
+     "Para una licencia de matrimonio, haga una cita con la Registradora al 201-587-2900. Traiga una identificación con foto, los papeles de divorcio si estuvo casado antes, y un testigo. El costo es $28, el trámite toma unos 3 días, y la licencia es válida por 30 días.",
+     "Las copias de certificados de nacimiento, matrimonio y defunción usan el formulario de registros vitales enlazado en la página del Departamento de Salud del sitio del municipio."
     ],
     "contact": [
      {
@@ -1089,7 +1151,9 @@
    "en": {
     "lead": "Dog and cat licenses are handled through the Health Department. Call Tracy Nafash at 201-843-7100 for pet license questions.",
     "details": [
-     "New Jersey requires a current rabies vaccination for a dog license."
+     "Fees: a spayed or neutered dog is $10, a dog that is not spayed or neutered is $13, and all cats are $10. Every dog and cat over seven months old needs a license.",
+     "Renewals start in the second week of January. Licenses issued after March 1 carry a $5 late fee.",
+     "You must show proof of a current rabies vaccination. To renew by mail, send a copy of the rabies certificate and a check payable to the Township of Saddle Brook."
     ],
     "contact": [
      {
@@ -1107,7 +1171,9 @@
    "es": {
     "lead": "Las licencias para perros y gatos se tramitan en el Departamento de Salud. Llame a Tracy Nafash al 201-843-7100 para preguntas sobre licencias de mascotas.",
     "details": [
-     "New Jersey requiere una vacuna contra la rabia vigente para la licencia de un perro."
+     "Costos: un perro esterilizado cuesta $10, un perro no esterilizado $13, y todos los gatos $10. Todo perro y gato mayor de siete meses necesita una licencia.",
+     "Las renovaciones comienzan en la segunda semana de enero. Las licencias emitidas después del 1 de marzo tienen un recargo de $5 por atraso.",
+     "Debe mostrar prueba de una vacuna contra la rabia vigente. Para renovar por correo, envíe una copia del certificado de rabia y un cheque a nombre de Township of Saddle Brook."
     ],
     "contact": [
      {
@@ -1147,7 +1213,8 @@
    "en": {
     "lead": "The Recreation Department runs township recreation programs and youth activities. The Recreation Director is Andrew Gallo.",
     "details": [
-     "Program announcements and sign-ups are posted on the Recreation page of the township website."
+     "Program announcements and sign-ups are posted on the Recreation page of the township website. The department email is SBREC@saddlebrooknj.gov.",
+     "At Recreation Center open gym, children ages 1 to 12 must be with an adult at all times."
     ],
     "contact": [
      {
@@ -1164,7 +1231,8 @@
    "es": {
     "lead": "El Departamento de Recreación administra los programas recreativos y las actividades juveniles del municipio. El Director de Recreación es Andrew Gallo.",
     "details": [
-     "Los anuncios e inscripciones de programas se publican en la página de Recreación del sitio web del municipio."
+     "Los anuncios e inscripciones de programas se publican en la página de Recreación del sitio web del municipio. El correo del departamento es SBREC@saddlebrooknj.gov.",
+     "En el gimnasio abierto del Centro de Recreación, los niños de 1 a 12 años deben estar acompañados por un adulto en todo momento."
     ],
     "contact": [
      {
@@ -1197,9 +1265,11 @@
     ]
    },
    "en": {
-    "lead": "The Saddle Brook Senior Center is at 8 Caldwell Avenue and is open Monday to Friday, 8:00 AM to 3:30 PM.",
+    "lead": "The Saddle Brook Senior Center is at 8 Caldwell Avenue and is open Monday to Friday, 8:00 AM to 3:30 PM. It serves Saddle Brook residents age 55 and older.",
     "details": [
-     "The Senior Center Director is Karen D'Arminio. Senior newsletters are archived on the township website."
+     "The center is managed by Karen D'Arminio. Senior newsletters are archived on the township website.",
+     "Weekly activities include line dancing, exercise classes, Zumba, bingo and the Happy Stitchers group. All residents 55 and older may join activities without joining a club.",
+     "The senior bus runs doctor visits Monday to Wednesday mornings and food shopping at Shop-Rite on Thursdays; call the center to arrange a ride."
     ],
     "contact": [
      {
@@ -1214,9 +1284,11 @@
     ]
    },
    "es": {
-    "lead": "El Centro de Adultos Mayores de Saddle Brook está en 8 Caldwell Avenue y abre de lunes a viernes, de 8:00 AM a 3:30 PM.",
+    "lead": "El Centro de Adultos Mayores de Saddle Brook está en 8 Caldwell Avenue y abre de lunes a viernes, de 8:00 AM a 3:30 PM. Atiende a residentes de Saddle Brook de 55 años en adelante.",
     "details": [
-     "La Directora del Centro es Karen D'Arminio. Los boletines para adultos mayores están archivados en el sitio web del municipio."
+     "El centro lo administra Karen D'Arminio. Los boletines para adultos mayores están archivados en el sitio web del municipio.",
+     "Las actividades semanales incluyen baile en línea, clases de ejercicio, Zumba, bingo y el grupo Happy Stitchers. Todos los residentes de 55 años en adelante pueden participar sin unirse a un club.",
+     "El autobús para adultos mayores hace visitas al médico de lunes a miércoles por la mañana y compras en Shop-Rite los jueves; llame al centro para coordinar el transporte."
     ],
     "contact": [
      {
@@ -1252,7 +1324,7 @@
    "en": {
     "lead": "The Saddle Brook Free Public Library is at 340 Mayhill Street.",
     "details": [
-     "Call the library for hours, programs and library card questions."
+     "Call the library for hours, programs and library card questions. The circulation desk email is sabkcirc@bccls.org."
     ],
     "contact": [
      {
@@ -1269,7 +1341,7 @@
    "es": {
     "lead": "La Biblioteca Pública Gratuita de Saddle Brook está en 340 Mayhill Street.",
     "details": [
-     "Llame a la biblioteca para horarios, programas y preguntas sobre la tarjeta de biblioteca."
+     "Llame a la biblioteca para horarios, programas y preguntas sobre la tarjeta de biblioteca. El correo del mostrador de circulación es sabkcirc@bccls.org."
     ],
     "contact": [
      {
@@ -1306,26 +1378,34 @@
    "en": {
     "lead": "Saddle Brook Public Schools are run by the Saddle Brook School District and its Board of Education, separate from Town Hall.",
     "details": [
-     "Town Hall cannot answer school registration, busing or student questions. Contact the school district directly; the township site links to Saddle Brook Public Schools from its departments list."
+     "For registration, busing or student questions, contact the district office directly. Schools: Franklin Elementary 201-843-8664, Helen I. Smith 201-796-6650, Long Memorial 201-796-6250, and the Middle School and High School 201-843-2880."
     ],
     "contact": [
      {
-      "label": "Town Hall main number",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "School District Office",
+      "value": "201-843-1142",
+      "href": "tel:+12018431142"
+     },
+     {
+      "label": "School District Office",
+      "value": "540 Saddle River Road, Saddle Brook, NJ 07663"
      }
     ]
    },
    "es": {
     "lead": "Las Escuelas Públicas de Saddle Brook las administra el Distrito Escolar de Saddle Brook y su Junta de Educación, separados del Ayuntamiento.",
     "details": [
-     "El Ayuntamiento no puede responder preguntas de inscripción escolar, transporte o estudiantes. Contacte directamente al distrito escolar; el sitio del municipio enlaza a las Escuelas Públicas desde su lista de departamentos."
+     "Para preguntas de inscripción, transporte escolar o estudiantes, contacte directamente a la oficina del distrito. Escuelas: Franklin Elementary 201-843-8664, Helen I. Smith 201-796-6650, Long Memorial 201-796-6250, y la escuela intermedia y secundaria 201-843-2880."
     ],
     "contact": [
      {
-      "label": "Número principal del Ayuntamiento",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "Oficina del Distrito Escolar",
+      "value": "201-843-1142",
+      "href": "tel:+12018431142"
+     },
+     {
+      "label": "Oficina del Distrito Escolar",
+      "value": "540 Saddle River Road, Saddle Brook, NJ 07663"
      }
     ]
    },
@@ -1351,7 +1431,8 @@
    "en": {
     "lead": "When snow falls and streets are snow covered, township ordinance prohibits parking on either side of the street until the streets are cleared.",
     "details": [
-     "The rule was amended February 20, 2025. It keeps plows and the street sweeper able to get through."
+     "The rule was amended February 20, 2025. Violators are subject to fines.",
+     "Sidewalks must be cleared of snow and ice within 24 hours after the snow stops. Do not shovel or blow snow onto the roadway, and clear the snow around any fire hydrant in front of your property."
     ],
     "contact": [
      {
@@ -1369,7 +1450,8 @@
    "es": {
     "lead": "Cuando cae nieve y las calles están cubiertas, la ordenanza del municipio prohíbe estacionar en cualquier lado de la calle hasta que las calles estén despejadas.",
     "details": [
-     "La regla fue enmendada el 20 de febrero de 2025. Permite que las máquinas quitanieves y la barredora puedan pasar."
+     "La regla fue enmendada el 20 de febrero de 2025. Quien no la cumpla puede recibir una multa.",
+     "Las aceras deben limpiarse de nieve y hielo dentro de las 24 horas después de que pare de nevar. No palee ni sople nieve hacia la calle, y limpie la nieve alrededor de cualquier hidrante frente a su propiedad."
     ],
     "contact": [
      {
@@ -1407,38 +1489,38 @@
     ]
    },
    "en": {
-    "lead": "Here are the main township numbers: Town Hall 201-587-2900, HELP line 201-587-2912, Clerk 201-587-2901, Tax Collector 201-587-2914, Water 201-587-2905, Building Department 201-843-7111, DPW 201-843-3064, Police non-emergency 201-843-7000, Municipal Court 201-587-2930, Senior Center 201-845-4594, Library 201-843-3287.",
+    "lead": "Here are the main township numbers: Town Hall 201-587-2900, Clerk 201-587-2901, Tax Collector 201-587-2914, Water 201-587-2905, Building Department 201-843-7111, DPW 201-843-3064, Police non-emergency 201-843-7000, Police Records 201-587-2923, Municipal Court 201-587-2930, Fire Code Official 201-587-8184, Senior Center 201-845-4594, Library 201-843-3287.",
     "details": [
-     "For anything not listed, the HELP line can route you to the right office. In an emergency, always call 911."
+     "For anything not listed, call Town Hall at 201-587-2900. Residents who need assistance can leave a message for the Community Partnership coordinator on the HELP line, 201-587-2912. In an emergency, always call 911."
     ],
     "contact": [
-     {
-      "label": "Township HELP line",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
-     },
      {
       "label": "Town Hall main number",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
+     },
+     {
+      "label": "Community Partnership HELP line",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
      }
     ]
    },
    "es": {
-    "lead": "Estos son los números principales del municipio: Ayuntamiento 201-587-2900, línea HELP 201-587-2912, Secretario 201-587-2901, Recaudación de Impuestos 201-587-2914, Agua 201-587-2905, Construcción 201-843-7111, Obras Públicas 201-843-3064, Policía no urgente 201-843-7000, Corte Municipal 201-587-2930, Centro de Adultos Mayores 201-845-4594, Biblioteca 201-843-3287.",
+    "lead": "Estos son los números principales del municipio: Ayuntamiento 201-587-2900, Secretario 201-587-2901, Recaudación de Impuestos 201-587-2914, Agua 201-587-2905, Construcción 201-843-7111, Obras Públicas 201-843-3064, Policía no urgente 201-843-7000, Registros Policiales 201-587-2923, Corte Municipal 201-587-2930, Oficial del Código de Incendios 201-587-8184, Centro de Adultos Mayores 201-845-4594, Biblioteca 201-843-3287.",
     "details": [
-     "Para cualquier cosa que no esté en la lista, la línea HELP puede dirigirle a la oficina correcta. En una emergencia, llame siempre al 911."
+     "Para cualquier cosa que no esté en la lista, llame al Ayuntamiento al 201-587-2900. Los residentes que necesitan ayuda pueden dejar un mensaje para la coordinadora de Community Partnership en la línea HELP, 201-587-2912. En una emergencia, llame siempre al 911."
     ],
     "contact": [
-     {
-      "label": "Línea de ayuda HELP del municipio",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
-     },
      {
       "label": "Número principal del Ayuntamiento",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
+     },
+     {
+      "label": "Línea HELP de Community Partnership",
+      "value": "201-587-2912",
+      "href": "tel:+12015872912"
      }
     ]
    },
@@ -1466,7 +1548,8 @@
    "en": {
     "lead": "Township events are posted on the community calendar on the township website, and residents can submit events with the Saddle Brook Community Events Form.",
     "details": [
-     "The Saddle Brook Community Food Pantry accepts donations at the Municipal Complex, 55 Mayhill Street, and at the Free Public Library, 340 Mayhill Street."
+     "Submit events at least 3 days ahead; submissions are subject to approval, and business, for-profit, religious and political events are not permitted.",
+     "The Saddle Brook Community Food Pantry accepts donations at the Municipal Complex, 55 Mayhill Street, at the Free Public Library, 340 Mayhill Street, and at First Reformed Church, 5 Ackerman Avenue, in the bin at the Saddle River Road entrance. The pantry cannot accept expired food."
     ],
     "contact": [
      {
@@ -1483,7 +1566,8 @@
    "es": {
     "lead": "Los eventos del municipio se publican en el calendario comunitario del sitio web, y los residentes pueden enviar eventos con el Formulario de Eventos Comunitarios de Saddle Brook.",
     "details": [
-     "La Despensa Comunitaria de Alimentos de Saddle Brook acepta donaciones en el Complejo Municipal, 55 Mayhill Street, y en la Biblioteca Pública, 340 Mayhill Street."
+     "Envíe los eventos con al menos 3 días de anticipación; las propuestas están sujetas a aprobación, y no se permiten eventos comerciales, con fines de lucro, religiosos ni políticos.",
+     "La Despensa Comunitaria de Alimentos de Saddle Brook acepta donaciones en el Complejo Municipal, 55 Mayhill Street, en la Biblioteca Pública, 340 Mayhill Street, y en First Reformed Church, 5 Ackerman Avenue, en el contenedor de la entrada de Saddle River Road. La despensa no puede aceptar alimentos vencidos."
     ],
     "contact": [
      {
@@ -1517,10 +1601,11 @@
     ]
    },
    "en": {
-    "lead": "To report a pothole, call the Department of Public Works with the street and the nearest cross street or house number.",
+    "lead": "To report a pothole, call the Department of Public Works at 201-843-3064.",
     "details": [
+     "Have the street and the nearest cross street or house number ready when you call. DPW is at 251 2nd Street and its office hours are 7:00 AM to 3:30 PM.",
      "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township.",
-     "For a pothole on a Bergen County road, the township will route you to the county."
+     "After hours, the township directs emergencies to the Police Department at 201-843-7000."
     ],
     "contact": [
      {
@@ -1529,17 +1614,18 @@
       "href": "tel:+12018433064"
      },
      {
-      "label": "Township HELP line",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
+      "label": "Police Department, after hours",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
      }
     ]
    },
    "es": {
-    "lead": "Para reportar un bache, llame al Departamento de Obras Públicas con la calle y la esquina o número de casa más cercano.",
+    "lead": "Para reportar un bache, llame al Departamento de Obras Públicas al 201-843-3064.",
     "details": [
+     "Tenga lista la calle y la esquina o número de casa más cercano cuando llame. Obras Públicas está en 251 2nd Street y su horario es de 7:00 AM a 3:30 PM.",
      "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
-     "Para un bache en una carretera del Condado de Bergen, el municipio le dirigirá al condado."
+     "Fuera de horario, el municipio dirige las emergencias al Departamento de Policía al 201-843-7000."
     ],
     "contact": [
      {
@@ -1548,9 +1634,9 @@
       "href": "tel:+12018433064"
      },
      {
-      "label": "Línea de ayuda HELP del municipio",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
+      "label": "Policía, fuera de horario",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
      }
     ]
    },
@@ -1574,8 +1660,9 @@
     ]
    },
    "en": {
-    "lead": "To report a streetlight out, call Town Hall with the street, the nearest house number, and the number on the pole if you can see it.",
+    "lead": "The township website does not publish a streetlight contact. Start with Town Hall at 201-587-2900, Monday to Friday, 8:30 AM to 4:00 PM.",
     "details": [
+     "Have the street, the nearest house number, and the number on the pole if you can see it; that helps locate the light.",
      "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township."
     ],
     "contact": [
@@ -1583,17 +1670,13 @@
       "label": "Town Hall main number",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
-     },
-     {
-      "label": "Township HELP line",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
      }
     ]
    },
    "es": {
-    "lead": "Para reportar una farola apagada, llame al Ayuntamiento con la calle, el número de casa más cercano, y el número del poste si puede verlo.",
+    "lead": "El sitio web del municipio no publica un contacto para el alumbrado público. Comience con el Ayuntamiento al 201-587-2900, de lunes a viernes, de 8:30 AM a 4:00 PM.",
     "details": [
+     "Tenga la calle, el número de casa más cercano y el número del poste si puede verlo; eso ayuda a localizar la farola.",
      "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
     ],
     "contact": [
@@ -1601,11 +1684,6 @@
       "label": "Número principal del Ayuntamiento",
       "value": "201-587-2900",
       "href": "tel:+12015872900"
-     },
-     {
-      "label": "Línea de ayuda HELP del municipio",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
      }
     ]
    },
@@ -1631,9 +1709,10 @@
     ]
    },
    "en": {
-    "lead": "For active flooding or a sewer backup, call the Department of Public Works during the day, or the Police non-emergency line after hours.",
+    "lead": "For active flooding, call the Department of Public Works during the day, or the Police Department after hours.",
     "details": [
      "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township.",
+     "The Building Department page of the township website carries the township's flood safety information.",
      "If water is entering your home or anyone is in danger, call 911."
     ],
     "contact": [
@@ -1650,9 +1729,10 @@
     ]
    },
    "es": {
-    "lead": "Para una inundación activa o un retorno de alcantarillado, llame al Departamento de Obras Públicas durante el día, o a la línea no urgente de la Policía fuera de horario.",
+    "lead": "Para una inundación activa, llame al Departamento de Obras Públicas durante el día, o al Departamento de Policía fuera de horario.",
     "details": [
      "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
+     "La página del Departamento de Construcción del sitio del municipio tiene la información de seguridad contra inundaciones del municipio.",
      "Si el agua está entrando en su casa o alguien está en peligro, llame al 911."
     ],
     "contact": [
@@ -1679,19 +1759,27 @@
      "garbage not picked up",
      "trash was not collected",
      "missed garbage",
-     "missed recycling"
+     "missed recycling",
+     "not picked up",
+     "was not picked up",
+     "trash not picked up",
+     "did not pick up my garbage",
+     "garbage was missed"
     ],
     "es": [
      "no recogieron",
      "basura no recogida",
      "no pasaron por la basura",
-     "reciclaje no recogido"
+     "reciclaje no recogido",
+     "no recogieron mi basura",
+     "no pasaron a recoger"
     ]
    },
    "en": {
     "lead": "If your garbage or recycling was missed, call the Department of Public Works.",
     "details": [
-     "Garbage is collected Wednesdays and Saturdays and recycling on Fridays, so first check that it was your collection day and that items were at the curb on time."
+     "Garbage is collected Wednesdays and Saturdays and recycling on Fridays, so first check that it was your collection day and that items were at the curb on time.",
+     "Crews have until 5:00 PM to finish a route, so wait until after 5:00 PM before reporting a missed pickup. You can also look up your street's schedule on the DPW page of the township website."
     ],
     "contact": [
      {
@@ -1704,7 +1792,8 @@
    "es": {
     "lead": "Si no recogieron su basura o reciclaje, llame al Departamento de Obras Públicas.",
     "details": [
-     "La basura se recoge los miércoles y sábados y el reciclaje los viernes, así que primero confirme que era su día de recogida y que los artículos estaban en la acera a tiempo."
+     "La basura se recoge los miércoles y sábados y el reciclaje los viernes, así que primero confirme que era su día de recogida y que los artículos estaban en la acera a tiempo.",
+     "Las cuadrillas tienen hasta las 5:00 PM para terminar una ruta, así que espere hasta después de las 5:00 PM antes de reportar una recogida no realizada. También puede consultar el horario de su calle en la página de Obras Públicas del sitio del municipio."
     ],
     "contact": [
      {
@@ -1737,38 +1826,38 @@
     ]
    },
    "en": {
-    "lead": "Property maintenance complaints go to Town Hall, which routes them to the right inspector.",
+    "lead": "Property maintenance complaints go to the Building Department. The Property Maintenance Official is Anthony Ambrogio, the township's Construction Official and Zoning Officer.",
     "details": [
-     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township."
+     "Use the Report an issue tool on this page to prepare a summary first, then call it in. This chat prepares your report only; the report is filed when you contact the township.",
+     "The Building Department is open Monday to Friday, 8:30 AM to 4:00 PM. Email: permits@saddlebrooknj.gov."
     ],
     "contact": [
      {
-      "label": "Town Hall main number",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "Building Department",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
      },
      {
-      "label": "Township HELP line",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
+      "label": "Building Department",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
      }
     ]
    },
    "es": {
-    "lead": "Las quejas de mantenimiento de propiedad van al Ayuntamiento, que las dirige al inspector correcto.",
+    "lead": "Las quejas de mantenimiento de propiedad van al Departamento de Construcción. El Oficial de Mantenimiento de Propiedades es Anthony Ambrogio, el Oficial de Construcción y Oficial de Zonificación del municipio.",
     "details": [
-     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
+     "El Departamento de Construcción abre de lunes a viernes, de 8:30 AM a 4:00 PM. Correo: permits@saddlebrooknj.gov."
     ],
     "contact": [
      {
-      "label": "Número principal del Ayuntamiento",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "Departamento de Construcción",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
      },
      {
-      "label": "Línea de ayuda HELP del municipio",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
+      "label": "Departamento de Construcción",
+      "value": "55 Mayhill Street, Saddle Brook, NJ 07663"
      }
     ]
    },
@@ -1792,38 +1881,38 @@
     ]
    },
    "en": {
-    "lead": "For noise happening right now, call the Police Department non-emergency line. For an ongoing noise or ordinance issue, Town Hall can route it during business hours.",
+    "lead": "For noise happening right now, call the Police Department at 201-843-7000.",
     "details": [
-     "Use the Report an issue tool on this page to prepare a summary first if it is an ongoing issue. This chat prepares your report only; the report is filed when you contact the township."
+     "Use the Report an issue tool on this page to prepare a summary first if it is an ongoing issue. This chat prepares your report only; the report is filed when you contact the township.",
+     "The Police Department is at 63 Market Street."
     ],
     "contact": [
      {
-      "label": "Police non-emergency",
+      "label": "Police Department",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      },
      {
-      "label": "Town Hall main number",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "Police Department",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
      }
     ]
    },
    "es": {
-    "lead": "Para un ruido que está ocurriendo ahora, llame a la línea no urgente del Departamento de Policía. Para un problema continuo de ruido u ordenanza, el Ayuntamiento puede dirigirlo en horario de oficina.",
+    "lead": "Para un ruido que está ocurriendo ahora, llame al Departamento de Policía al 201-843-7000.",
     "details": [
-     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero si es un problema continuo. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+     "Use la herramienta Reportar un problema en esta página para preparar un resumen primero si es un problema continuo. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio.",
+     "El Departamento de Policía está en 63 Market Street."
     ],
     "contact": [
      {
-      "label": "Policía, no urgente",
+      "label": "Departamento de Policía",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      },
      {
-      "label": "Número principal del Ayuntamiento",
-      "value": "201-587-2900",
-      "href": "tel:+12015872900"
+      "label": "Departamento de Policía",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
      }
     ]
    },
@@ -1838,38 +1927,52 @@
      "speeding cars",
      "traffic complaint",
      "dangerous driving",
-     "stop sign"
+     "stop sign",
+     "about speeding",
+     "speeding on my street",
+     "report speeding",
+     "cars speeding"
     ],
     "es": [
      "exceso de velocidad",
      "autos a velocidad",
      "queja de transito",
-     "conduccion peligrosa"
+     "conduccion peligrosa",
+     "sobre el exceso de velocidad",
+     "reportar exceso de velocidad"
     ]
    },
    "en": {
     "lead": "Speeding and traffic complaints go to the Saddle Brook Police Department.",
     "details": [
-     "Use the Report an issue tool on this page to prepare a summary with the street, the times of day it happens, and direction of travel, then call it in. This chat prepares your report only; the report is filed when you contact the township."
+     "It helps to note the street, the times of day it happens, and the direction of travel. Use the Report an issue tool on this page to prepare a summary, then call it in. This chat prepares your report only; the report is filed when you contact the township."
     ],
     "contact": [
      {
-      "label": "Police non-emergency",
+      "label": "Police Department",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
+     },
+     {
+      "label": "Police Department",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
      }
     ]
    },
    "es": {
     "lead": "Las quejas de exceso de velocidad y tránsito van al Departamento de Policía de Saddle Brook.",
     "details": [
-     "Use la herramienta Reportar un problema en esta página para preparar un resumen con la calle, las horas en que ocurre y la dirección del tránsito, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
+     "Ayuda anotar la calle, las horas en que ocurre y la dirección del tránsito. Use la herramienta Reportar un problema en esta página para preparar un resumen, y luego llame. Este chat solo prepara su reporte; el reporte se presenta cuando usted contacta al municipio."
     ],
     "contact": [
      {
-      "label": "Policía, no urgente",
+      "label": "Departamento de Policía",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
+     },
+     {
+      "label": "Departamento de Policía",
+      "value": "63 Market Street, Saddle Brook, NJ 07663"
      }
     ]
    },
@@ -1896,15 +1999,11 @@
    "en": {
     "lead": "Use the Report an issue tool on this page: pick the type of issue, add the exact location and a short description, and this chat prepares a summary for you.",
     "details": [
-     "This chat does not send or save your report. The report is filed when you call the department number shown with your summary, or the township HELP line.",
+     "This chat does not send or save your report. The report is filed when you call the department number shown with your summary.",
+     "The township also has an online contact form on the Contact Us page of its website, where you can send a question or concern in writing.",
      "In an emergency, always call 911 instead."
     ],
     "contact": [
-     {
-      "label": "Township HELP line",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
-     },
      {
       "label": "Town Hall main number",
       "value": "201-587-2900",
@@ -1915,15 +2014,11 @@
    "es": {
     "lead": "Use la herramienta Reportar un problema en esta página: elija el tipo de problema, agregue la ubicación exacta y una descripción breve, y este chat prepara un resumen para usted.",
     "details": [
-     "Este chat no envía ni guarda su reporte. El reporte se presenta cuando usted llama al número del departamento que se muestra con su resumen, o a la línea HELP del municipio.",
+     "Este chat no envía ni guarda su reporte. El reporte se presenta cuando usted llama al número del departamento que se muestra con su resumen.",
+     "El municipio también tiene un formulario de contacto en línea en la página Contáctenos de su sitio web, donde puede enviar una pregunta o inquietud por escrito.",
      "En una emergencia, llame siempre al 911."
     ],
     "contact": [
-     {
-      "label": "Línea de ayuda HELP del municipio",
-      "value": "201-587-2912",
-      "href": "tel:+12015872912"
-     },
      {
       "label": "Número principal del Ayuntamiento",
       "value": "201-587-2900",
@@ -1955,11 +2050,11 @@
     "lead": "Permanent disability placards and wheelchair symbol plates come from the NJ Motor Vehicle Commission, not Town Hall.",
     "details": [
      "Complete Form SP-41, certified by a medical practitioner. There is no fee, and you recertify every 3 years.",
-     "For a temporary placard, apply through the Saddle Brook Police Department with a physician-certified application."
+     "For a temporary placard, apply in person through the Saddle Brook Police Department using Form SP-68, certified by a medical practitioner. The fee is $4, the placard is good for six months, and it can be renewed once."
     ],
     "contact": [
      {
-      "label": "Police non-emergency",
+      "label": "Police Department",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      },
@@ -1974,11 +2069,11 @@
     "lead": "Los carteles permanentes de discapacidad y las placas con el símbolo de silla de ruedas los emite la Comisión de Vehículos Motorizados de NJ, no el Ayuntamiento.",
     "details": [
      "Complete el Formulario SP-41, certificado por un profesional médico. No tiene costo, y se recertifica cada 3 años.",
-     "Para un cartel temporal, solicítelo a través del Departamento de Policía de Saddle Brook con una solicitud certificada por un médico."
+     "Para un cartel temporal, solicítelo en persona a través del Departamento de Policía de Saddle Brook con el Formulario SP-68, certificado por un profesional médico. El costo es $4, el cartel es válido por seis meses y se puede renovar una vez."
     ],
     "contact": [
      {
-      "label": "Policía, no urgente",
+      "label": "Departamento de Policía",
       "value": "201-843-7000",
       "href": "tel:+12018437000"
      },
@@ -1989,7 +2084,7 @@
      }
     ]
    },
-   "source": "https://www.nj.gov/mvc/vehicletopics/disability.htm",
+   "source": "https://www.nj.gov/mvc/vehicles/disability.htm",
    "sourceLabel": "NJ Motor Vehicle Commission"
   }
  ]
