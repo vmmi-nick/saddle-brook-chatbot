@@ -49,8 +49,12 @@ function detectLang(question, requested) {
 const EMERGENCY = [
   'fire', 'smoke', 'burning', 'robbery', 'robbed', 'break in', 'breaking in', 'gun', 'shooting',
   'heart attack', 'chest pain', 'not breathing', 'unconscious', 'overdose', 'choking', 'bleeding',
-  'car accident with injuries', 'emergency', 'fuego', 'incendio', 'humo', 'robo', 'atraco', 'disparo',
-  'emergencia', 'no respira', 'inconsciente', 'sangrando', 'ataque al corazon'
+  'car accident with injuries', 'smell gas', 'smell of gas', 'gas smell', 'gas leak', 'fight', 'fighting', 'assault', 'assaulted',
+  'hit and run', 'i have an emergency', 'this is an emergency', 'an emergency',
+  'fuego', 'incendio', 'humo', 'robo', 'atraco', 'disparo',
+  'no respira', 'inconsciente', 'sangrando', 'ataque al corazon',
+  'huele a gas', 'olor a gas', 'fuga de gas', 'pelea', 'asalto', 'atropello y fuga', 'choque y fuga',
+  'una emergencia'
 ];
 
 function isEmergency(qn) {
@@ -62,14 +66,17 @@ function isEmergency(qn) {
   // not emergencies either; only the bare emergency words are.
   if (qn.includes(' fire code ') || qn.includes(' fire department ') || qn.includes(' fire prevention ') ||
       qn.includes(' fire inspection ') || qn.includes(' fire official ') || qn.includes(' codigo de incendios ')) return false;
-  return EMERGENCY.some((w) => qn.includes(normalize(w)));
+  // Whole-word / whole-phrase matching, same as topic matching: the question
+  // is space-padded, so 'gun' can no longer match inside 'pregunta' and the
+  // bare words 'emergency' / 'emergencia' only fire inside real phrases like
+  // 'i have an emergency' / 'una emergencia', never in 'emergency rent assistance'.
+  return EMERGENCY.some((w) => qn.includes(' ' + normalize(w) + ' '));
 }
 
 // Services Saddle Brook does not provide; never let a generic keyword match
 // (for example "license") route these to a township office.
 const NOT_TOWNSHIP = [
-  "driver's license", 'drivers license', 'driver license', 'renew my license plate registration',
-  'licencia de conducir', 'car registration renewal', 'vehicle registration renewal', 'passport'
+  'passport'
 ];
 
 const MEETING_HINTS = [
@@ -320,7 +327,7 @@ app.post('/api/ask', async (req, res) => {
 
   if (isEmergency(qn)) return res.json({ lang, ...emergencyAnswer(lang) });
 
-  if (NOT_TOWNSHIP.some((w) => qn.includes(normalize(w)))) {
+  if (NOT_TOWNSHIP.some((w) => qn.includes(' ' + normalize(w) + ' '))) {
     return res.json({ lang, ...fallbackAnswer(lang, 'not-a-township-service') });
   }
 
