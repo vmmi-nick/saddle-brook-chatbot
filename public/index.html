@@ -265,9 +265,9 @@
         <div class="rp-summary" id="rp-summary"></div>
         <button class="rp-copy" id="rp-copy" type="button">Copy summary</button>
         <div><a class="rp-gov" id="rp-gov" href="https://saddlebrooknj.us/contact-us/" target="_blank" rel="noopener">Open the township Contact Us page</a></div>
-        <p id="rp-final-note">Nothing is submitted from this page. Call the department number for your issue, or the Township HELP line at 201-587-2912, and read or share your summary to file the report.</p>
+        <p id="rp-final-note">Nothing is submitted from this page. Call the department number for your issue, or Town Hall at 201-587-2900, and read or share your summary to file the report.</p>
         <p class="rp-warn" id="rp-warn">This form is NOT for emergencies. If there is an immediate risk to health or safety, call 911.</p>
-        <p id="rp-alt">Prefer to call? The Township HELP line takes reports at 201-587-2912 during Town Hall hours.</p>
+        <p id="rp-alt">Prefer to call? Town Hall takes reports at 201-587-2900 during Town Hall hours, Monday to Friday, 8:30 AM to 4:00 PM.</p>
       </div>
       <div class="rp-err" id="rp-err"></div>
       <div class="rp-nav">
@@ -343,9 +343,9 @@
         s5: '5. Your report summary',
         copy: 'Copy summary', copied: 'Copied',
         gov: 'Open the township Contact Us page',
-        finalNote: 'Nothing is submitted from this page. Call the department number for your issue, or the Township HELP line at 201-587-2912, and read or share your summary to file the report.',
+        finalNote: 'Nothing is submitted from this page. Call the department number for your issue, or Town Hall at 201-587-2900, and read or share your summary to file the report.',
         warn: 'This form is NOT for emergencies. If there is an immediate risk to health or safety, call 911.',
-        alt: 'Prefer to call? The Township HELP line takes reports at 201-587-2912 during Town Hall hours.',
+        alt: 'Prefer to call? Town Hall takes reports at 201-587-2900 during Town Hall hours, Monday to Friday, 8:30 AM to 4:00 PM.',
         back: 'Back', next: 'Continue',
         errType: 'Please choose a type of concern.',
         errAddr: 'Please enter the address or nearest intersection.',
@@ -393,9 +393,9 @@
         s5: '5. El resumen de su reporte',
         copy: 'Copiar resumen', copied: 'Copiado',
         gov: 'Abrir la página de contacto del municipio',
-        finalNote: 'Nada se envía desde esta página. Llame al número del departamento para su problema, o a la línea HELP del municipio al 201-587-2912, y lea o comparta su resumen para presentar el reporte.',
+        finalNote: 'Nada se envía desde esta página. Llame al número del departamento para su problema, o al Ayuntamiento al 201-587-2900, y lea o comparta su resumen para presentar el reporte.',
         warn: 'Este formulario NO es para emergencias. Si hay un riesgo inmediato para la salud o la seguridad, llame al 911.',
-        alt: '¿Prefiere llamar? La línea HELP del municipio recibe reportes al 201-587-2912 en horario del Ayuntamiento.',
+        alt: '¿Prefiere llamar? El Ayuntamiento recibe reportes al 201-587-2900 en horario de oficina, de lunes a viernes, de 8:30 AM a 4:00 PM.',
         back: 'Atrás', next: 'Continuar',
         errType: 'Por favor elija un tipo de preocupación.',
         errAddr: 'Por favor escriba la dirección o el cruce más cercano.',
@@ -423,7 +423,7 @@
     if (data.contact && data.contact.length){
       html+='<div class="contact"><div class="ctitle">'+esc(STR[lang].contact)+'</div>'+
         data.contact.map(function(c){
-          var v = c.href ? '<a href="'+esc(c.href)+'">'+esc(c.value)+'</a>' : esc(c.value);
+          var v = c.href ? '<a href="'+esc(c.href)+'"'+(/^https?:/i.test(c.href)?' target="_blank" rel="noopener"':'')+'>'+esc(c.value)+'</a>' : esc(c.value);
           return '<div>'+esc(c.label)+': '+v+'</div>';
         }).join('')+'</div>';
     }
@@ -490,7 +490,7 @@
     fetch('/api/ask', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, lang:lang}) })
       .then(function(r){ return r.json(); })
       .then(function(data){ thinking.remove(); addBot(data); })
-      .catch(function(){ thinking.remove(); addBot({lead: lang==='es' ? 'Lo siento, algo salió mal. Llame a la línea HELP del municipio al 201-587-2912.' : 'Sorry, something went wrong. Please call the Township HELP line at 201-587-2912.', details:[], contact:[]}); })
+      .catch(function(){ thinking.remove(); addBot({lead: lang==='es' ? 'Lo siento, algo salió mal. Llame al Ayuntamiento al 201-587-2900.' : 'Sorry, something went wrong. Please call Town Hall at 201-587-2900.', details:[], contact:[]}); })
       .finally(function(){ btn.disabled=false; });
   }
   document.getElementById('askform').addEventListener('submit', function(e){
