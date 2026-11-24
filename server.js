@@ -3,7 +3,7 @@
 // data/meetings.json). Questions the index does not cover are sent to the
 // Meta Model API only when MODEL_API_KEY is set, and only with context from
 // the approved trusted sources list (data/trusted-sources.json). Otherwise
-// they return the Township HELP line fallback. No personal information is
+// they return the Town Hall main number fallback. No personal information is
 // collected or stored.
 
 const express = require('express');
@@ -58,6 +58,10 @@ function isEmergency(qn) {
   // number) are not emergencies; the hyphen normalizes to a space, which
   // would otherwise trip the bare "emergency" keyword.
   if (qn.includes(' non emergency ')) return false;
+  // Fire-service questions (fire code, fire department, inspections) are
+  // not emergencies either; only the bare emergency words are.
+  if (qn.includes(' fire code ') || qn.includes(' fire department ') || qn.includes(' fire prevention ') ||
+      qn.includes(' fire inspection ') || qn.includes(' fire official ') || qn.includes(' codigo de incendios ')) return false;
   return EMERGENCY.some((w) => qn.includes(normalize(w)));
 }
 
@@ -180,10 +184,10 @@ function fallbackAnswer(lang, reason) {
       ? 'No tengo una respuesta verificada para eso en las fuentes oficiales del municipio, así que no quiero adivinar.'
       : 'I do not have a verified answer for that in the official township sources, so I do not want to guess.',
     details: [lang === 'es'
-      ? 'La Línea de ayuda HELP del municipio puede dirigir su pregunta a la oficina correcta. Este chat no recopila información personal.'
-      : 'The Township HELP line can route your question to the right office. This chat does not collect personal information.'],
+      ? 'El número principal del Ayuntamiento puede dirigir su pregunta a la oficina correcta. Este chat no recopila información personal.'
+      : 'Town Hall can route your question to the right office. This chat does not collect personal information.'],
     contact: [
-      { label: lang === 'es' ? 'Línea de ayuda HELP del municipio' : 'Township HELP line', value: HELP_DESK, href: `tel:+1${HELP_DESK.replace(/-/g, '')}` },
+      { label: lang === 'es' ? 'Número principal del Ayuntamiento' : 'Town Hall main number', value: HELP_DESK, href: `tel:+1${HELP_DESK.replace(/-/g, '')}` },
       { label: lang === 'es' ? 'Ayuntamiento, número principal' : 'Town Hall main number', value: index.townHall.mainPhone, href: `tel:+1${index.townHall.mainPhone.replace(/-/g, '')}` }
     ],
     source: null, sourceLabel: null
@@ -231,8 +235,8 @@ function buildModelContext() {
 
 async function askModel(question, lang) {
   const fallbackText = lang === 'es'
-    ? `No tengo una respuesta verificada para eso. Llame al Línea de ayuda HELP del municipio al ${HELP_DESK}.`
-    : `I do not have a verified answer for that. Please call the Township HELP line at ${HELP_DESK}.`;
+    ? `No tengo una respuesta verificada para eso. Llame al Ayuntamiento al ${HELP_DESK}.`
+    : `I do not have a verified answer for that. Please call Town Hall at ${HELP_DESK}.`;
   const prompt = [
     'You are the constituent chatbot for the Township of Saddle Brook, New Jersey.',
     'Answer ONLY from the township facts provided below. Do not use outside knowledge.',
@@ -277,7 +281,7 @@ async function askModel(question, lang) {
       lead: text.split('\n')[0],
       details: text.split('\n').slice(1).map((s) => s.trim()).filter(Boolean),
       contact: [
-        { label: lang === 'es' ? 'Línea de ayuda HELP del municipio' : 'Township HELP line', value: HELP_DESK, href: `tel:+1${HELP_DESK.replace(/-/g, '')}` }
+        { label: lang === 'es' ? 'Número principal del Ayuntamiento' : 'Town Hall main number', value: HELP_DESK, href: `tel:+1${HELP_DESK.replace(/-/g, '')}` }
       ],
       source: null, sourceLabel: null
     };
