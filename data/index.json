@@ -443,6 +443,7 @@
      "property tax",
      "pay my taxes",
      "tax bill",
+     "tax bills",
      "taxes due",
      "tax payment",
      "tax collector",
@@ -579,6 +580,8 @@
    "keywords": {
     "en": [
      "water bill",
+     "water bills",
+     "pay water bill",
      "pay my water bill",
      "water department",
      "water billing",
@@ -651,12 +654,15 @@
     "en": [
      "garbage",
      "trash pickup",
+     "trash collection",
      "trash",
      "bulk pickup",
      "bulk items",
      "couch pickup",
      "mattress pickup",
-     "garbage schedule"
+     "garbage schedule",
+     "garbage pickup",
+     "garbage collection"
     ],
     "es": [
      "basura",
@@ -831,18 +837,30 @@
    "keywords": {
     "en": [
      "permit",
+     "permits",
      "building permit",
      "construction permit",
      "renovation permit",
      "building department",
      "inspections",
-     "certificate of occupancy"
+     "certificate of occupancy",
+     "build a shed",
+     "shed",
+     "fence",
+     "deck",
+     "construction",
+     "renovation",
+     "home improvement"
     ],
     "es": [
      "permiso",
+     "permisos",
      "permiso de construccion",
      "departamento de construccion",
-     "inspecciones"
+     "inspecciones",
+     "construir un cobertizo",
+     "cerca",
+     "construccion"
     ]
    },
    "en": {
@@ -890,17 +908,24 @@
     "en": [
      "municipal court",
      "traffic ticket",
+     "traffic tickets",
      "pay my ticket",
+     "pay my tickets",
+     "pay a ticket",
      "court date",
      "parking ticket",
+     "parking tickets",
+     "speeding ticket",
      "summons"
     ],
     "es": [
      "corte municipal",
      "multa de transito",
      "pagar mi multa",
+     "pagar mis multas",
      "fecha de corte",
-     "multa de estacionamiento"
+     "multa de estacionamiento",
+     "multas de estacionamiento"
     ]
    },
    "en": {
@@ -1166,13 +1191,17 @@
    "keywords": {
     "en": [
      "dog license",
+     "dog licenses",
      "pet license",
+     "pet licenses",
      "cat license",
+     "cat licenses",
      "license my dog",
      "dog registration"
     ],
     "es": [
      "licencia para perros",
+     "licencias para perros",
      "licencia para mascotas",
      "licencia para gatos",
      "registrar mi perro"
@@ -1679,14 +1708,21 @@
     "en": [
      "streetlight out",
      "street light",
+     "street light out",
      "report a streetlight",
-     "streetlight"
+     "streetlight",
+     "streetlights",
+     "traffic light",
+     "traffic signal",
+     "traffic light out"
     ],
     "es": [
      "alumbrado",
      "farola apagada",
      "reportar una farola",
-     "luz de la calle"
+     "luz de la calle",
+     "semaforo",
+     "semaforo apagado"
     ]
    },
    "en": {
@@ -2116,6 +2152,553 @@
    },
    "source": "https://www.nj.gov/mvc/vehicles/disability.htm",
    "sourceLabel": "NJ Motor Vehicle Commission"
+  },
+  {
+   "id": "mvc-license",
+   "keywords": {
+    "en": [
+     "driver license",
+     "drivers license",
+     "driver's license",
+     "drivers licenses",
+     "motor vehicle commission",
+     "mvc",
+     "car registration",
+     "vehicle registration",
+     "registration renewal",
+     "register my car",
+     "register a car",
+     "license plates",
+     "real id",
+     "road test",
+     "renew my license",
+     "new license"
+    ],
+    "es": [
+     "licencia de conducir",
+     "renovar mi licencia",
+     "registro de vehiculo",
+     "placas",
+     "comision de vehiculos",
+     "examen de manejo"
+    ]
+   },
+   "en": {
+    "lead": "Driver's licenses, non-driver IDs and vehicle registrations are handled by the NJ Motor Vehicle Commission (MVC), not by the township.",
+    "details": [
+     "The nearest licensing center is the MVC in Lodi, at 8 Mill Street (off Garibaldi Avenue), which handles driver licenses, IDs, REAL ID and road tests. Most services are by appointment, booked on the MVC website.",
+     "Vehicle services such as titles, registrations and plates are handled at MVC vehicle centers; the MVC website lists locations and appointments."
+    ],
+    "contact": [
+     {
+      "label": "NJ MVC website",
+      "value": "nj.gov/mvc",
+      "href": "https://www.nj.gov/mvc/"
+     },
+     {
+      "label": "NJ MVC customer service",
+      "value": "609-292-6500",
+      "href": "tel:+16092926500"
+     },
+     {
+      "label": "MVC Lodi Licensing Center",
+      "value": "8 Mill Street, Lodi, NJ 07644"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Las licencias de conducir, las identificaciones y los registros de vehículos los maneja la Comisión de Vehículos Motorizados de NJ (MVC), no el municipio.",
+    "details": [
+     "El centro de licencias más cercano es el MVC de Lodi, en 8 Mill Street (cerca de Garibaldi Avenue), que atiende licencias de conducir, identificaciones, REAL ID y exámenes de manejo. La mayoría de los servicios son con cita, reservada en el sitio web del MVC.",
+     "Los servicios de vehículos, como títulos, registros y placas, se atienden en los centros de vehículos del MVC; el sitio web del MVC lista las ubicaciones y las citas."
+    ],
+    "contact": [
+     {
+      "label": "Sitio web del MVC de NJ",
+      "value": "nj.gov/mvc",
+      "href": "https://www.nj.gov/mvc/"
+     },
+     {
+      "label": "Servicio al cliente del MVC",
+      "value": "609-292-6500",
+      "href": "tel:+16092926500"
+     },
+     {
+      "label": "Centro de Licencias MVC de Lodi",
+      "value": "8 Mill Street, Lodi, NJ 07644"
+     }
+    ]
+   },
+   "source": "https://www.nj.gov/mvc/locations/liccenters.htm",
+   "sourceLabel": "NJ Motor Vehicle Commission"
+  },
+  {
+   "id": "power-outage",
+   "keywords": {
+    "en": [
+     "power outage",
+     "power is out",
+     "electricity out",
+     "outage",
+     "no power",
+     "downed wire",
+     "pseg",
+     "electric bill",
+     "gas company",
+     "power out"
+    ],
+    "es": [
+     "apagon",
+     "sin luz",
+     "corte de luz",
+     "se fue la luz",
+     "factura de electricidad",
+     "no hay luz"
+    ]
+   },
+   "en": {
+    "lead": "PSE&G provides electric and gas service in Saddle Brook, so power outages are reported to PSE&G, not to the township.",
+    "details": [
+     "Report an outage or check restoration times on PSE&G's outage center page, or call PSE&G at 1-800-436-7734.",
+     "Stay away from downed wires and treat every wire as live; report downed wires to 911.",
+     "If you smell gas, leave the building and call 911 or PSE&G's gas emergency line at 1-800-880-7734."
+    ],
+    "contact": [
+     {
+      "label": "PSE&G outage center",
+      "value": "outagecenter.pseg.com",
+      "href": "https://outagecenter.pseg.com"
+     },
+     {
+      "label": "PSE&G outages and customer service",
+      "value": "1-800-436-7734",
+      "href": "tel:+18004367734"
+     },
+     {
+      "label": "PSE&G gas emergencies",
+      "value": "1-800-880-7734",
+      "href": "tel:+18008807734"
+     }
+    ]
+   },
+   "es": {
+    "lead": "PSE&G provee el servicio eléctrico y de gas en Saddle Brook, por lo que los apagones se reportan a PSE&G, no al municipio.",
+    "details": [
+     "Reporte un apagón o consulte los tiempos de restauración en la página del centro de apagones de PSE&G, o llame a PSE&G al 1-800-436-7734.",
+     "Manténgase alejado de cables caídos y trátelos como si tuvieran corriente; reporte los cables caídos al 911.",
+     "Si huele a gas, salga del edificio y llame al 911 o a la línea de emergencias de gas de PSE&G al 1-800-880-7734."
+    ],
+    "contact": [
+     {
+      "label": "Centro de apagones de PSE&G",
+      "value": "outagecenter.pseg.com",
+      "href": "https://outagecenter.pseg.com"
+     },
+     {
+      "label": "Apagones y servicio al cliente de PSE&G",
+      "value": "1-800-436-7734",
+      "href": "tel:+18004367734"
+     },
+     {
+      "label": "Emergencias de gas de PSE&G",
+      "value": "1-800-880-7734",
+      "href": "tel:+18008807734"
+     }
+    ]
+   },
+   "source": "https://nj.pseg.com/outageandgasleaks",
+   "sourceLabel": "PSE&G"
+  },
+  {
+   "id": "snap-assistance",
+   "keywords": {
+    "en": [
+     "food stamps",
+     "snap",
+     "food assistance",
+     "ebt",
+     "help buying food",
+     "social services",
+     "benefits assistance"
+    ],
+    "es": [
+     "cupones de alimentos",
+     "asistencia alimentaria",
+     "ayuda para comida",
+     "servicios sociales",
+     "ayuda con beneficios"
+    ]
+   },
+   "en": {
+    "lead": "Food assistance through NJ SNAP (formerly food stamps) is a county and state program, not a township program.",
+    "details": [
+     "You can apply online through NJHelps, or in person at the Bergen County Board of Social Services, 218 Route 17 North, Rochelle Park, open Monday to Friday, 8:00 AM to 4:30 PM.",
+     "The NJ SNAP information line is 1-800-687-9512. Saddle Brook's own food pantry information is listed on the township community calendar."
+    ],
+    "contact": [
+     {
+      "label": "Apply for NJ SNAP online",
+      "value": "mynjhelps.gov",
+      "href": "https://www.mynjhelps.gov"
+     },
+     {
+      "label": "Bergen County Board of Social Services",
+      "value": "201-368-4200",
+      "href": "tel:+12013684200"
+     },
+     {
+      "label": "NJ SNAP information line",
+      "value": "1-800-687-9512",
+      "href": "tel:+18006879512"
+     },
+     {
+      "label": "Board of Social Services",
+      "value": "218 Route 17 North, Rochelle Park, NJ 07662"
+     }
+    ]
+   },
+   "es": {
+    "lead": "La asistencia alimentaria de NJ SNAP (antes cupones de alimentos) es un programa del condado y del estado, no del municipio.",
+    "details": [
+     "Puede solicitar en línea a través de NJHelps, o en persona en la Junta de Servicios Sociales del Condado de Bergen, 218 Route 17 North, Rochelle Park, abierta de lunes a viernes, de 8:00 AM a 4:30 PM.",
+     "La línea de información de NJ SNAP es 1-800-687-9512. La información de la despensa de alimentos de Saddle Brook está en el calendario comunitario del municipio."
+    ],
+    "contact": [
+     {
+      "label": "Solicitar NJ SNAP en línea",
+      "value": "mynjhelps.gov",
+      "href": "https://www.mynjhelps.gov"
+     },
+     {
+      "label": "Junta de Servicios Sociales del Condado de Bergen",
+      "value": "201-368-4200",
+      "href": "tel:+12013684200"
+     },
+     {
+      "label": "Línea de información de NJ SNAP",
+      "value": "1-800-687-9512",
+      "href": "tel:+18006879512"
+     },
+     {
+      "label": "Junta de Servicios Sociales",
+      "value": "218 Route 17 North, Rochelle Park, NJ 07662"
+     }
+    ]
+   },
+   "source": "https://www.nj.gov/humanservices/njsnap/",
+   "sourceLabel": "NJ SNAP / Bergen County Board of Social Services"
+  },
+  {
+   "id": "nj-transit",
+   "keywords": {
+    "en": [
+     "bus schedule",
+     "nj transit",
+     "bus stop",
+     "train station",
+     "public transportation",
+     "bus to new york",
+     "commuter bus"
+    ],
+    "es": [
+     "horario de autobuses",
+     "autobus",
+     "transporte publico",
+     "estacion de tren",
+     "parada de autobus"
+    ]
+   },
+   "en": {
+    "lead": "NJ TRANSIT runs the bus service for Saddle Brook. The township does not operate buses or trains, and there is no train station in town.",
+    "details": [
+     "Schedules, stops and fares are on the NJ TRANSIT website. NJ TRANSIT customer service is 973-275-5555, with automated schedule and fare information around the clock and operators daily from 8:30 AM to 5:00 PM."
+    ],
+    "contact": [
+     {
+      "label": "NJ TRANSIT schedules and stops",
+      "value": "njtransit.com",
+      "href": "https://www.njtransit.com"
+     },
+     {
+      "label": "NJ TRANSIT customer service",
+      "value": "973-275-5555",
+      "href": "tel:+19732755555"
+     }
+    ]
+   },
+   "es": {
+    "lead": "NJ TRANSIT opera el servicio de autobuses de Saddle Brook. El municipio no opera autobuses ni trenes, y no hay una estación de tren en el pueblo.",
+    "details": [
+     "Los horarios, las paradas y las tarifas están en el sitio web de NJ TRANSIT. El servicio al cliente de NJ TRANSIT es 973-275-5555, con información automatizada de horarios y tarifas las 24 horas y operadores todos los días de 8:30 AM a 5:00 PM."
+    ],
+    "contact": [
+     {
+      "label": "Horarios y paradas de NJ TRANSIT",
+      "value": "njtransit.com",
+      "href": "https://www.njtransit.com"
+     },
+     {
+      "label": "Servicio al cliente de NJ TRANSIT",
+      "value": "973-275-5555",
+      "href": "tel:+19732755555"
+     }
+    ]
+   },
+   "source": "https://www.njtransit.com/contact",
+   "sourceLabel": "NJ TRANSIT"
+  },
+  {
+   "id": "dead-animal",
+   "keywords": {
+    "en": [
+     "dead animal",
+     "dead deer",
+     "animal carcass",
+     "dead animal in the road",
+     "roadkill",
+     "dead raccoon"
+    ],
+    "es": [
+     "animal muerto",
+     "ciervo muerto",
+     "animal muerto en la calle"
+    ]
+   },
+   "en": {
+    "lead": "The township website does not publish a dead animal removal procedure, so the right starting point depends on where the animal is.",
+    "details": [
+     "For a dead animal in a township street, call the Department of Public Works at 201-843-3064, Monday to Friday, 7:00 AM to 3:30 PM.",
+     "If the animal is a safety hazard, or it is after hours, call the Police Department non-emergency number at 201-843-7000. Animals on county or state roads are handled by those road owners."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Police Department non-emergency",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El sitio web del municipio no publica un procedimiento para retirar animales muertos, así que el punto de partida correcto depende de dónde esté el animal.",
+    "details": [
+     "Para un animal muerto en una calle del municipio, llame al Departamento de Obras Públicas al 201-843-3064, de lunes a viernes, de 7:00 AM a 3:30 PM.",
+     "Si el animal es un peligro para la seguridad, o es fuera de horario, llame al número de no emergencias de la Policía al 201-843-7000. Los animales en carreteras del condado o del estado los retiran los dueños de esas vías."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Policía, no emergencias",
+      "value": "201-843-7000",
+      "href": "tel:+12018437000"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/department-of-public-works/",
+   "sourceLabel": "Township of Saddle Brook official site (DPW page)"
+  },
+  {
+   "id": "no-heat",
+   "keywords": {
+    "en": [
+     "no heat",
+     "no hot water",
+     "heat complaint",
+     "landlord no heat",
+     "no heating",
+     "apartment no heat",
+     "heat not working",
+     "heating not working",
+     "heat is not working",
+     "heating is not working",
+     "fix the heat",
+     "no heat in my apartment"
+    ],
+    "es": [
+     "sin calefaccion",
+     "no hay calefaccion",
+     "sin agua caliente",
+     "queja de calefaccion"
+    ]
+   },
+   "en": {
+    "lead": "The township does not publish a dedicated no-heat complaint line. Heating and habitability complaints are handled as property maintenance matters.",
+    "details": [
+     "Start with the Building Department at 201-843-7111. The Property Maintenance Official is Anthony Ambrogio, in the Building Department at 55 Mayhill Street.",
+     "For health concerns connected to living conditions, the Health Department can be reached through Town Hall at 201-587-2900. If you smell gas, call 911."
+    ],
+    "contact": [
+     {
+      "label": "Building Department",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "El municipio no publica una línea dedicada para quejas por falta de calefacción. Las quejas de calefacción y habitabilidad se atienden como asuntos de mantenimiento de propiedades.",
+    "details": [
+     "Comience con el Departamento de Construcción al 201-843-7111. El Oficial de Mantenimiento de Propiedades es Anthony Ambrogio, en el Departamento de Construcción, 55 Mayhill Street.",
+     "Para inquietudes de salud relacionadas con las condiciones de vivienda, puede comunicarse con el Departamento de Salud a través del Ayuntamiento al 201-587-2900. Si huele a gas, llame al 911."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Construcción",
+      "value": "201-843-7111",
+      "href": "tel:+12018437111"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/building-department/",
+   "sourceLabel": "Township of Saddle Brook official site (Building Department page)"
+  },
+  {
+   "id": "recycling-center",
+   "keywords": {
+    "en": [
+     "recycling center",
+     "recycling drop off",
+     "recycling dropoff",
+     "drop off recycling",
+     "where do i take recycling",
+     "recycling center hours"
+    ],
+    "es": [
+     "centro de reciclaje",
+     "donde llevo el reciclaje",
+     "dejar reciclaje"
+    ]
+   },
+   "en": {
+    "lead": "Saddle Brook does not list a township recycling center or drop-off site. Recycling here is curbside.",
+    "details": [
+     "Recycling is collected on Fridays, alternating between commingled containers and newspaper and cardboard. Replacement recycling cans are sold at the Municipal Complex for $11, and the DPW page has a street by street lookup for your schedules.",
+     "For items the curbside program does not take, call the Department of Public Works at 201-843-3064 for guidance."
+    ],
+    "contact": [
+     {
+      "label": "Department of Public Works",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Saddle Brook no tiene listado un centro de reciclaje municipal ni un sitio de entrega. Aquí el reciclaje es en la acera.",
+    "details": [
+     "El reciclaje se recoge los viernes, alternando entre contenedores mezclados y periódicos y cartón. Los contenedores de reciclaje de reemplazo se venden en el Complejo Municipal por $11, y la página de Obras Públicas tiene una búsqueda calle por calle para sus horarios.",
+     "Para artículos que el programa de acera no acepta, llame al Departamento de Obras Públicas al 201-843-3064 para orientación."
+    ],
+    "contact": [
+     {
+      "label": "Departamento de Obras Públicas",
+      "value": "201-843-3064",
+      "href": "tel:+12018433064"
+     },
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/department-of-public-works/",
+   "sourceLabel": "Township of Saddle Brook official site (DPW page)"
+  },
+  {
+   "id": "new-resident",
+   "keywords": {
+    "en": [
+     "new resident",
+     "just moved",
+     "moving to saddle brook",
+     "moved to town",
+     "new to town",
+     "new resident guide"
+    ],
+    "es": [
+     "nuevo residente",
+     "me mude",
+     "recien mudado",
+     "mudarse a saddle brook",
+     "nuevo en el pueblo"
+    ]
+   },
+   "en": {
+    "lead": "Welcome to Saddle Brook. Most day to day services run through Town Hall at 55 Mayhill Street, open Monday to Friday, 8:30 AM to 4:00 PM.",
+    "details": [
+     "Garbage is collected every Wednesday and Saturday, and recycling on Fridays, alternating commingled and newspaper weeks. Water is billed quarterly by the Water Department, and bills can be paid online through Munidex.",
+     "Every dog and cat over seven months old needs a township license from the Health Department. To register to vote or get vote by mail forms, contact the Township Clerk's Office.",
+     "A free library card is available at the Saddle Brook Free Public Library, 340 Mayhill Street. School registration is handled separately by the school district office."
+    ],
+    "contact": [
+     {
+      "label": "Town Hall main number",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Township Clerk's Office",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Saddle Brook Free Public Library",
+      "value": "201-843-3287",
+      "href": "tel:+12018433287"
+     }
+    ]
+   },
+   "es": {
+    "lead": "Bienvenido a Saddle Brook. La mayoría de los servicios diarios se atienden en el Ayuntamiento, 55 Mayhill Street, abierto de lunes a viernes, de 8:30 AM a 4:00 PM.",
+    "details": [
+     "La basura se recoge cada miércoles y sábado, y el reciclaje los viernes, alternando semanas de contenedores mezclados y de periódicos. El agua la factura trimestralmente el Departamento de Agua, y las facturas se pueden pagar en línea a través de Munidex.",
+     "Todo perro y gato mayor de siete meses necesita una licencia municipal del Departamento de Salud. Para registrarse para votar o pedir formularios de voto por correo, comuníquese con la Oficina del Secretario Municipal.",
+     "La tarjeta de la biblioteca es gratis en la Biblioteca Pública Gratuita de Saddle Brook, 340 Mayhill Street. La inscripción escolar la maneja por separado la oficina del distrito escolar."
+    ],
+    "contact": [
+     {
+      "label": "Número principal del Ayuntamiento",
+      "value": "201-587-2900",
+      "href": "tel:+12015872900"
+     },
+     {
+      "label": "Oficina del Secretario Municipal",
+      "value": "201-587-2901",
+      "href": "tel:+12015872901"
+     },
+     {
+      "label": "Biblioteca Pública Gratuita de Saddle Brook",
+      "value": "201-843-3287",
+      "href": "tel:+12018433287"
+     }
+    ]
+   },
+   "source": "https://saddlebrooknj.us/",
+   "sourceLabel": "Township of Saddle Brook official site"
   }
  ]
 }

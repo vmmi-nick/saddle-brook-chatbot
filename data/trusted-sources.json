@@ -1,5 +1,5 @@
 {
- "governingRule": "Official government sites only. Each topic answers to whoever owns that topic: township questions to the township, license and placard questions to the NJ MVC, county road questions to Bergen County. No blogs, news articles, forums or search snippets treated as fact. If no listed source covers a question, fall back to the Township HELP line instead of answering from model memory.",
+ "governingRule": "Official government sites only. Each topic answers to whoever owns that topic: township questions to the township, license and placard questions to the NJ MVC, county road questions to Bergen County. No blogs, news articles, forums or search snippets treated as fact. If no listed source covers a question, fall back to the Town Hall main number instead of answering from model memory.",
  "notApproved": [
   {
    "approved": false,
@@ -34,6 +34,11 @@
      "approved": true,
      "domain": "bergencounty.org",
      "scope": "County roads, county parks, elections, county services, Board of Taxation"
+    },
+    {
+     "approved": true,
+     "domain": "bcbss.com",
+     "scope": "Bergen County Board of Social Services: SNAP and social services (added Nov 24, 2026 for the SNAP refer-out topic)"
     }
    ]
   },
@@ -55,6 +60,16 @@
      "approved": true,
      "domain": "nj.gov",
      "scope": "State programs that township pages point to"
+    },
+    {
+     "approved": true,
+     "domain": "njtransit.com",
+     "scope": "NJ TRANSIT: bus schedules, stops, customer service (added Nov 24, 2026)"
+    },
+    {
+     "approved": true,
+     "domain": "mynjhelps.gov",
+     "scope": "NJ benefits application portal (SNAP and related programs) (added Nov 24, 2026)"
     }
    ]
   },
@@ -76,6 +91,22 @@
      "approved": true,
      "domain": "medicare.gov",
      "scope": "Medicare, refer out only"
+    }
+   ]
+  },
+  {
+   "name": "Utilities (service owner, refer out)",
+   "tier": 5,
+   "sources": [
+    {
+     "approved": true,
+     "domain": "nj.pseg.com",
+     "scope": "PSE&G: outage reporting and gas emergencies for Saddle Brook (added Nov 24, 2026 at Nick's direction)"
+    },
+    {
+     "approved": true,
+     "domain": "outagecenter.pseg.com",
+     "scope": "PSE&G outage center: report outages and check restoration (added Nov 24, 2026)"
     }
    ]
   }
