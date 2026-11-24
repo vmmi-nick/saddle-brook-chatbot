@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saddle Brook Constituent Chatbot</title>
+<style>
+  :root{
+    --burgundy:#0c2d68; --burgundy-dark:#08204a; --burgundy-ink:#08204a;
+    --gold:#d9a514; --gold-deep:#b8890e; --gold-soft:#f7e08a; --gold-pale:#fdf6d8;
+    --bg:#f4f6f6; --panel:#ffffff; --panel-soft:#fbf8f2;
+    --text:#26221f; --muted:#5f574f; --border:#d5dee0;
+    --shadow:0 1px 2px rgba(8,32,74,.06),0 8px 24px rgba(8,32,74,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1c1715; --panel:#2a2320; --panel-soft:#241e1b;
+      --text:#f2ece6; --muted:#c0b3a6; --border:#4a3f36;
+      --gold-soft:#5c4d1e; --gold-pale:#33291a; --gold-deep:#d9b64a;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;
+    /* Sized with height:100% (the iframe's own height), never vh/dvh:
+       viewport units inside an iframe can resolve against the host page's
+       viewport (notably iOS Safari), which made this page taller than the
+       frame and pushed the composer below the visible area. */
+    display:flex;flex-direction:column;height:100%;overflow:hidden;
+  }
+  a{color:var(--burgundy)}
+  @media (prefers-color-scheme: dark){ a{color:var(--gold-soft)} }
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+  /* ---------- slim header ---------- */
+  .topbar{
+    flex:0 0 auto;
+    background:var(--burgundy);color:#fff;border-bottom:3px solid var(--gold);
+  }
+  .topbar-in{
+    padding:8px 12px;
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+  }
+  .brand{display:flex;align-items:center;gap:9px;min-width:0}
+  .seal{
+    flex:0 0 auto;width:30px;height:30px;border-radius:50%;
+    border:2px solid var(--gold);color:var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-family:Georgia,serif;font-weight:700;font-size:.74rem;letter-spacing:.04em;
+  }
+  .brand-name{font-family:Georgia,serif;font-size:.92rem;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .brand-sub{display:block;font-family:inherit;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft)}
+  .langtoggle{display:flex;background:var(--burgundy-dark);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px;flex:0 0 auto}
+  .langbtn{
+    border:0;background:transparent;color:#f7e08a;border-radius:999px;
+    padding:4px 11px;cursor:pointer;font:inherit;font-size:.8rem;
+  }
+  .langbtn.active{background:#fff;color:var(--burgundy);font-weight:600}
+  .embed-note{
+    flex:0 0 auto;padding:7px 12px;font-size:.78rem;color:#efe6d4;
+    background:var(--burgundy-dark);border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  /* ---------- scrolling message area ---------- */
+  .chatwrap{
+    flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;
+    padding:14px 12px 10px;
+    background:var(--panel-soft);
+    -webkit-overflow-scrolling:touch;
+  }
+  #chat{display:flex;flex-direction:column;gap:12px}
+  .msg{max-width:92%;padding:11px 14px;border-radius:14px;line-height:1.55;font-size:.95rem;overflow-wrap:break-word;white-space:pre-wrap}
+  .msg.user{align-self:flex-end;background:var(--burgundy);color:#fff;border-bottom-right-radius:4px}
+  .msg.bot{align-self:flex-start;background:var(--panel);border:1px solid var(--border);border-bottom-left-radius:4px;box-shadow:0 1px 2px rgba(8,32,74,.05)}
+  .msg.bot .lead{font-weight:600}
+  .msg.bot ul{margin:8px 0 0;padding-left:20px}
+  .msg.bot li{margin-top:3px}
+  .contact{margin-top:12px;border-top:2px solid var(--gold);padding-top:8px;font-size:.92rem}
+  .contact .ctitle{font-variant:small-caps;letter-spacing:.06em;color:var(--burgundy);font-weight:700}
+  @media (prefers-color-scheme: dark){ .contact .ctitle{color:var(--gold-deep)} }
+  .contact div{margin-top:3px}
+  .source{margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);font-size:.82rem;color:var(--muted)}
+
+  /* ---------- suggestion chips ---------- */
+  /* One horizontally scrolling row: wrapping these long chips previously
+     stacked them into a tall block that crowded the composer out of
+     short frames. */
+  .tryrow{flex:0 0 auto;display:flex;align-items:center;gap:8px;flex-wrap:nowrap;padding:8px 12px;background:var(--bg)}
+  .trylabel{font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-deep);flex:0 0 auto}
+  .chips{display:flex;gap:7px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;padding:2px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{
+    background:var(--panel);border:1px solid var(--gold);color:var(--text);
+    border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;font-size:.85rem;
+    flex:0 0 auto;white-space:nowrap;
+  }
+  .chip:hover{background:var(--gold-pale)}
+  .chip.report-chip{background:var(--burgundy);border-color:var(--burgundy);color:#fff;font-weight:600}
+  .chip.report-chip:hover{background:var(--burgundy-dark)}
+
+  /* ---------- report wizard ---------- */
+  .reportpanel{background:var(--panel);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:16px;margin:0 0 14px}
+  .reportpanel h2{font-family:Georgia,"Times New Roman",serif;font-weight:700;margin:0 0 6px;font-size:1.15rem;color:var(--burgundy-ink)}
+  @media (prefers-color-scheme: dark){ .reportpanel h2{color:var(--gold-soft)} }
+  .reportpanel .section-sub{margin:0 0 14px;font-size:.9rem;color:var(--muted)}
+  .rp-start,.rp-nav button,.rp-copy{background:var(--burgundy);color:#fff;border:0;border-radius:10px;padding:11px 18px;font-size:15px;font-weight:600;cursor:pointer}
+  .rp-start:hover,.rp-nav button:hover,.rp-copy:hover{background:var(--burgundy-dark)}
+  .rp-nav{display:flex;gap:10px;margin-top:16px}
+  .rp-nav .rp-back{background:var(--panel-soft);color:var(--text);border:1px solid var(--border)}
+  .rp-types{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+  .rp-type{border:1px solid var(--border);background:var(--panel-soft);color:var(--text);border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer}
+  .rp-type.sel{background:var(--gold);border-color:var(--gold-deep);color:#231a05;font-weight:700}
+  .rp-field{margin:12px 0}
+  .rp-field label{display:block;font-weight:600;margin-bottom:6px}
+  .rp-field input[type=text],.rp-field textarea{width:100%;padding:11px;border:1px solid var(--border);border-radius:10px;font-size:15px;background:var(--panel);color:var(--text)}
+  .rp-step-label{font-weight:700;color:var(--burgundy-ink);margin:14px 0 2px}
+  @media (prefers-color-scheme: dark){ .rp-step-label{color:var(--gold-soft)} }
+  .rp-summary{white-space:pre-wrap;background:var(--panel-soft);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:14px}
+  .rp-gov{display:inline-block;margin:14px 0 6px;background:var(--gold);color:#231a05;font-weight:800;font-size:17px;padding:14px 22px;border-radius:12px;text-decoration:none;border:2px solid var(--gold-deep)}
+  .rp-warn{font-weight:700}
+  .rp-err{color:#b3261e;font-weight:600;min-height:20px}
+  #rp-step5 .speakbtn{margin-left:10px}
+
+  /* ---------- composer ---------- */
+  .composer{
+    flex:0 0 auto;
+    background:var(--bg);border-top:1px solid var(--border);
+    padding:8px 12px 10px;
+  }
+  form{display:flex;gap:8px;align-items:flex-end}
+  textarea#q{
+    flex:1;min-width:0;padding:10px 13px;border:1px solid var(--border);border-radius:16px;
+    font:inherit;font-size:1rem;line-height:1.45;background:var(--panel);color:var(--text);box-shadow:var(--shadow);
+    resize:none;overflow-y:hidden;min-height:54px;max-height:120px;
+  }
+  textarea#q::placeholder{color:var(--muted)}
+  button.send{
+    background:var(--burgundy);color:#fff;border:0;border-radius:999px;
+    padding:12px 20px;cursor:pointer;font:inherit;font-size:1rem;font-weight:600;flex:0 0 auto;
+  }
+  button.send:hover{background:var(--burgundy-dark)}
+  button.send:disabled{opacity:.55;cursor:default}
+
+  /* ---------- voice (mic input + read-aloud) ---------- */
+  .voicebar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 8px}
+  .voice-enc{font-size:.85rem;line-height:1.35;color:var(--muted)}
+  button.mic{
+    background:var(--panel);color:var(--burgundy);border:1px solid var(--gold);border-radius:999px;
+    padding:10px 18px;cursor:pointer;flex:0 0 auto;font:inherit;font-size:1rem;font-weight:600;
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;box-shadow:var(--shadow);
+  }
+  button.mic:hover{background:var(--gold-pale)}
+  button.mic svg{width:24px;height:24px;fill:currentColor;flex:0 0 auto}
+  button.mic.listening{background:var(--burgundy);color:#fff;border-color:var(--burgundy);animation:micpulse 1.2s ease-in-out infinite}
+  @keyframes micpulse{0%,100%{box-shadow:0 0 0 0 rgba(12,45,104,.45)}50%{box-shadow:0 0 0 12px rgba(12,45,104,0)}}
+  @media (prefers-color-scheme: dark){
+    button.mic{color:var(--gold-soft)}
+    button.mic.listening{color:#fff}
+  }
+  .voicehint{display:none;font-size:.85rem;color:var(--gold-deep);font-weight:600;margin-top:8px}
+  .voicehint.on{display:block}
+  .voicemsg{display:none;font-size:.9rem;color:var(--burgundy);font-weight:600;margin-top:8px}
+  .voicemsg.on{display:block}
+  .speakbtn{
+    margin-top:10px;background:var(--panel);border:1px solid var(--gold);color:var(--text);
+    border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:.82rem;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .speakbtn:hover{background:var(--gold-pale)}
+  .speakbtn svg{width:14px;height:14px;fill:currentColor;flex:0 0 auto}
+  .speakbtn.speaking{background:var(--burgundy);border-color:var(--burgundy);color:#fff}
+
+  /* ---------- short frames (small windows, landscape phones) ---------- */
+  @media (max-height:540px){
+    .embed-note{display:none}
+    .brand-sub{display:none}
+    .topbar-in{padding:6px 12px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="seal" aria-hidden="true">SB</span>
+      <span class="brand-name"><span id="title">Saddle Brook Constituent Chatbot</span><span class="brand-sub">Borough of Saddle Brook</span></span>
+    </div>
+    <div class="langtoggle" role="group" aria-label="Language / Idioma">
+      <button class="langbtn active" id="btn-en" type="button" aria-pressed="true">English</button>
+      <button class="langbtn" id="btn-es" type="button" aria-pressed="false">Español</button>
+    </div>
+  </div>
+  <div class="embed-note" id="disclaimer">Guidance only, not official notice. In an emergency call 911. This chat does not collect personal information.</div>
+</div>
+
+<div class="chatwrap" id="chatwrap">
+  <section class="reportpanel" id="report-panel">
+    <h2 id="rp-title">Report an issue</h2>
+    <p class="section-sub" id="rp-sub">Prepare your report here, then call it in. This page prepares your summary only; nothing is sent or saved here. The report is filed when you contact the township.</p>
+    <button class="rp-start" id="rp-start" type="button">Start a report</button>
+    <div id="rp-wiz" hidden>
+      <div id="rp-step1">
+        <div class="rp-step-label" id="rp-s1-label">1. What type of concern is it?</div>
+        <div class="rp-types" id="rp-types"></div>
+      </div>
+      <div id="rp-step2" hidden>
+        <div class="rp-step-label" id="rp-s2-label">2. Where is it?</div>
+        <div class="rp-field"><label for="rp-addr" id="rp-addr-label">Street address or nearest intersection</label><input type="text" id="rp-addr" autocomplete="off"></div>
+        <div class="rp-field"><label for="rp-locdesc" id="rp-locdesc-label">Describe the location (optional)</label><input type="text" id="rp-locdesc" autocomplete="off"></div>
+      </div>
+      <div id="rp-step3" hidden>
+        <div class="rp-step-label" id="rp-s3-label">3. Describe the concern</div>
+        <div class="rp-field"><label for="rp-desc" id="rp-desc-label">What is happening, since when, and anything the crew should know</label><textarea id="rp-desc" rows="4"></textarea></div>
+      </div>
+      <div id="rp-step4" hidden>
+        <div class="rp-step-label" id="rp-s4-label">4. Your contact information (optional)</div>
+        <div class="rp-field"><label for="rp-name" id="rp-name-label">Your name</label><input type="text" id="rp-name" autocomplete="off"></div>
+        <div class="rp-field"><label for="rp-contactinfo" id="rp-contactinfo-label">Email or phone</label><input type="text" id="rp-contactinfo" autocomplete="off"></div>
+        <div class="rp-field"><label><input type="checkbox" id="rp-contactme"> <span id="rp-contactme-label">I would like to be contacted about this issue</span></label></div>
+      </div>
+      <div id="rp-step5" hidden>
+        <div class="rp-step-label" id="rp-s5-label">5. Your report summary</div>
+        <div class="rp-summary" id="rp-summary"></div>
+        <button class="rp-copy" id="rp-copy" type="button">Copy summary</button>
+        <div><a class="rp-gov" id="rp-gov" href="https://saddlebrooknj.us/contact-us/" target="_blank" rel="noopener">Open the township Contact Us page</a></div>
+        <p id="rp-final-note">Nothing is submitted from this page. Call the department number for your issue, or the Township HELP line at 201-587-2912, and read or share your summary to file the report.</p>
+        <p class="rp-warn" id="rp-warn">This form is NOT for emergencies. If there is an immediate risk to health or safety, call 911.</p>
+        <p id="rp-alt">Prefer to call? The Township HELP line takes reports at 201-587-2912 during Town Hall hours.</p>
+      </div>
+      <div class="rp-err" id="rp-err"></div>
+      <div class="rp-nav">
+        <button class="rp-back" id="rp-back" type="button" hidden>Back</button>
+        <button id="rp-next" type="button">Continue</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="chat" role="log" aria-live="polite" aria-label="Conversation"></div>
+</div>
+
+<div class="tryrow">
+  <span class="trylabel" id="try-label">Try asking:</span>
+  <div class="chips" id="chips"></div>
+</div>
+
+<div class="composer">
+  <form id="askform">
+    <label class="sr-only" for="q" id="q-label">Ask about township services</label>
+    <textarea id="q" rows="2" autocomplete="off" placeholder="Ask about township services..."></textarea>
+    <button class="send" id="sendbtn" type="submit">Ask</button>
+  </form>
+</div>
+
+<script>
+  var lang = 'en';
+  var STR = {
+    en: {
+      title: 'Saddle Brook Constituent Chatbot',
+      subtitle: 'Township of Saddle Brook, New Jersey. Answers from official township sources, in English and Spanish.',
+      disclaimer: 'Guidance only, not official notice. In an emergency call 911. This chat does not collect personal information.',
+      placeholder: 'Ask about township services...', ask: 'Ask', contact: 'Contact',
+      source: 'Source', thinking: 'Checking the township sources...',
+      cardsTitle: 'Browse township topics',
+      cardsSub: 'Tap a topic and the question is asked for you.',
+      tryLabel: 'Try asking:',
+      qLabel: 'Ask about township services',
+      greeting: 'Hello. I can help you find township services, forms, phone numbers and meeting dates. Ask me a question, or tap one of the topics below.',
+      voice: { mic: 'Tap & Talk', listening: 'Listening...', listen: 'Listen', stop: 'Stop', encourage: 'Skip the typing. Tap the mic, ask out loud, get your answer.', nohear: "I didn't catch that. Tap the microphone and try again.", blocked: 'Microphone access is blocked. Allow the microphone in your browser settings, or type your question instead.', network: 'Voice recognition needs an internet connection.' },
+      cards: [
+        { title: 'Council Meetings', desc: 'Meeting dates, times and agendas.', q: 'When is the next council meeting?' },
+        { title: "Mayor's Office", desc: 'Who leads the township.', q: 'Who is the mayor?' },
+        { title: 'Handicap Parking', desc: 'Placards and plates from NJ MVC.', q: 'How do I get a handicap parking placard?' },
+        { title: 'Birth Certificates', desc: 'Copies from the Registrar\'s Office.', q: 'How do I get a birth certificate?' },
+        { title: 'Senior Center', desc: 'Programs at the Senior Center.', q: 'Tell me about the Senior Center' },
+        { title: 'Garbage & Recycling', desc: 'Pickup schedules and rules.', q: 'Garbage and recycling' }
+      ],
+      chips: ['When is the next council meeting?', 'Who is the mayor?', 'How do I get a handicap parking placard?', 'How do I get a birth certificate?', 'Tell me about the Senior Center', 'Garbage and recycling'],
+      report: {
+        title: 'Report an issue',
+        sub: 'Prepare your report here, then call it in. This page prepares your summary only; nothing is sent or saved here. The report is filed when you contact the township.',
+        start: 'Start a report',
+        s1: '1. What type of concern is it?',
+        s2: '2. Where is it?',
+        addr: 'Street address or nearest intersection',
+        locdesc: 'Describe the location (optional)',
+        s3: '3. Describe the concern',
+        desc: 'What is happening, since when, and anything the crew should know',
+        s4: '4. Your contact information (optional)',
+        name: 'Your name',
+        contactinfo: 'Email or phone',
+        contactme: 'I would like to be contacted about this issue',
+        s5: '5. Your report summary',
+        copy: 'Copy summary', copied: 'Copied',
+        gov: 'Open the township Contact Us page',
+        finalNote: 'Nothing is submitted from this page. Call the department number for your issue, or the Township HELP line at 201-587-2912, and read or share your summary to file the report.',
+        warn: 'This form is NOT for emergencies. If there is an immediate risk to health or safety, call 911.',
+        alt: 'Prefer to call? The Township HELP line takes reports at 201-587-2912 during Town Hall hours.',
+        back: 'Back', next: 'Continue',
+        errType: 'Please choose a type of concern.',
+        errAddr: 'Please enter the address or nearest intersection.',
+        errDesc: 'Please describe the concern.',
+        sumType: 'Type of concern', sumAddr: 'Address', sumLoc: 'Location description', sumDesc: 'Description', sumName: 'Name', sumContact: 'Contact', sumCb: 'Please contact me about this issue',
+        types: ['Pothole','Streetlight out','Flooding / sewer backup','Illegal parking / abandoned vehicle','Property maintenance (weeds, tall grass, vacant property)','Missed garbage or recycling pickup','Noise','Speeding / traffic safety','Other']
+      }
+    },
+    es: {
+      title: 'Chat para Residentes de Saddle Brook',
+      subtitle: 'Municipio de Saddle Brook, New Jersey. Respuestas de fuentes oficiales del municipio, en inglés y español.',
+      disclaimer: 'Solo orientación, no es un aviso oficial. En una emergencia llame al 911. Este chat no recopila información personal.',
+      placeholder: 'Pregunte sobre los servicios del municipio...', ask: 'Preguntar', contact: 'Contacto',
+      source: 'Fuente', thinking: 'Consultando las fuentes del municipio...',
+      cardsTitle: 'Temas del municipio',
+      cardsSub: 'Toque un tema y la pregunta se hace por usted.',
+      tryLabel: 'Pruebe preguntar:',
+      qLabel: 'Pregunte sobre los servicios del municipio',
+      greeting: 'Hola. Puedo ayudarle a encontrar servicios del municipio, formularios, números de teléfono y fechas de reuniones. Hágame una pregunta o toque uno de los temas abajo.',
+      voice: { mic: 'Toque y hable', listening: 'Escuchando...', listen: 'Escuchar', stop: 'Detener', encourage: 'Sin escribir. Toque el micrófono, pregunte en voz alta y reciba su respuesta.', nohear: 'No escuché eso. Toque el micrófono e inténtelo de nuevo.', blocked: 'El acceso al micrófono está bloqueado. Permita el micrófono en los ajustes de su navegador, o escriba su pregunta.', network: 'El reconocimiento de voz necesita una conexión a internet.' },
+      cards: [
+        { title: 'Reuniones del Concejo', desc: 'Fechas, horarios y agendas de las reuniones.', q: '¿Cuándo es la próxima reunión del concejo?' },
+        { title: 'Oficina del Alcalde', desc: 'Quién dirige el municipio.', q: '¿Quién es el alcalde?' },
+        { title: 'Estacionamiento para Discapacitados', desc: 'Carteles y placas de NJ MVC.', q: '¿Cómo consigo un cartel para discapacitados?' },
+        { title: 'Actas de Nacimiento', desc: 'Copias de Registros Vitales.', q: '¿Cómo obtengo un acta de nacimiento?' },
+        { title: 'Servicios para Personas Mayores', desc: 'Programas y transporte para personas mayores.', q: 'Programas y transporte para personas mayores' },
+        { title: 'Basura y Reciclaje', desc: 'Horarios y reglas de recogida.', q: 'Basura y reciclaje' }
+      ],
+      chips: ['¿Cuándo es la próxima reunión del concejo?', '¿Quién es el alcalde?', '¿Cómo consigo un cartel para discapacitados?', '¿Cómo obtengo un acta de nacimiento?', 'Programas y transporte para personas mayores', 'Basura y reciclaje'],
+      report: {
+        title: 'Reportar un problema',
+        sub: 'Prepare su reporte aquí y luego llame para presentarlo. Esta página solo prepara su resumen; nada se envía ni se guarda aquí. El reporte se presenta cuando usted contacta al municipio.',
+        start: 'Comenzar un reporte',
+        s1: '1. ¿Qué tipo de preocupación es?',
+        s2: '2. ¿Dónde está?',
+        addr: 'Dirección o cruce de calles más cercano',
+        locdesc: 'Describa la ubicación (opcional)',
+        s3: '3. Describa la preocupación',
+        desc: 'Qué está pasando, desde cuándo, y cualquier cosa que la cuadrilla deba saber',
+        s4: '4. Su información de contacto (opcional)',
+        name: 'Su nombre',
+        contactinfo: 'Correo electrónico o teléfono',
+        contactme: 'Quiero que me contacten sobre este asunto',
+        s5: '5. El resumen de su reporte',
+        copy: 'Copiar resumen', copied: 'Copiado',
+        gov: 'Abrir la página de contacto del municipio',
+        finalNote: 'Nada se envía desde esta página. Llame al número del departamento para su problema, o a la línea HELP del municipio al 201-587-2912, y lea o comparta su resumen para presentar el reporte.',
+        warn: 'Este formulario NO es para emergencias. Si hay un riesgo inmediato para la salud o la seguridad, llame al 911.',
+        alt: '¿Prefiere llamar? La línea HELP del municipio recibe reportes al 201-587-2912 en horario del Ayuntamiento.',
+        back: 'Atrás', next: 'Continuar',
+        errType: 'Por favor elija un tipo de preocupación.',
+        errAddr: 'Por favor escriba la dirección o el cruce más cercano.',
+        errDesc: 'Por favor describa la preocupación.',
+        sumType: 'Tipo de preocupación', sumAddr: 'Dirección', sumLoc: 'Descripción de la ubicación', sumDesc: 'Descripción', sumName: 'Nombre', sumContact: 'Contacto', sumCb: 'Por favor contáctenme sobre este asunto',
+        types: ['Bache','Farola apagada','Inundación / respaldo de alcantarillado','Estacionamiento ilegal / vehículo abandonado','Mantenimiento de propiedad (maleza, pasto alto, propiedad vacía)','Recogida de basura o reciclaje perdida','Ruido','Exceso de velocidad / seguridad vial','Otro']
+      }
+    }
+  };
+  var chat = document.getElementById('chat');
+  var chatwrap = document.getElementById('chatwrap');
+  var chipsEl = document.getElementById('chips');
+
+  function esc(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+  function scrollChat(){ chatwrap.scrollTop = chatwrap.scrollHeight; }
+  function addUser(text){
+    var div=document.createElement('div'); div.className='msg user'; div.textContent=text;
+    chat.appendChild(div); scrollChat();
+  }
+  function addBot(data){
+    var div=document.createElement('div'); div.className='msg bot';
+    var html='<div class="lead">'+esc(data.lead||'')+'</div>';
+    if (data.details && data.details.length){
+      html+='<ul>'+data.details.map(function(d){return '<li>'+esc(d)+'</li>';}).join('')+'</ul>';
+    }
+    if (data.contact && data.contact.length){
+      html+='<div class="contact"><div class="ctitle">'+esc(STR[lang].contact)+'</div>'+
+        data.contact.map(function(c){
+          var v = c.href ? '<a href="'+esc(c.href)+'">'+esc(c.value)+'</a>' : esc(c.value);
+          return '<div>'+esc(c.label)+': '+v+'</div>';
+        }).join('')+'</div>';
+    }
+    if (data.source){
+      html+='<div class="source">'+esc(STR[lang].source)+': <a href="'+esc(data.source)+'" target="_blank" rel="noopener">'+esc(data.sourceLabel||data.source)+'</a></div>';
+    }
+    div.innerHTML=html;
+    if (voice.synthOK) attachSpeak(div, div.textContent.replace(/\s+/g,' ').trim(), data.lang);
+    chat.appendChild(div); scrollChat();
+  }
+  function openReport(){
+    var wiz=document.getElementById('rp-wiz');
+    if (wiz.hidden){ document.getElementById('rp-start').click(); }
+    chatwrap.scrollTop = 0;
+  }
+  function renderChips(){
+    chipsEl.innerHTML='';
+    var rb=document.createElement('button'); rb.type='button'; rb.className='chip report-chip'; rb.textContent=STR[lang].report.start;
+    rb.onclick=function(){ openReport(); };
+    chipsEl.appendChild(rb);
+    STR[lang].chips.forEach(function(c){
+      var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=c;
+      b.onclick=function(){ ask(c); };
+      chipsEl.appendChild(b);
+    });
+  }
+  function applyLang(){
+    document.getElementById('title').textContent=STR[lang].title;
+    document.getElementById('disclaimer').textContent=STR[lang].disclaimer;
+    document.getElementById('q').placeholder=STR[lang].placeholder;
+    document.getElementById('q-label').textContent=STR[lang].qLabel;
+    document.getElementById('sendbtn').textContent=STR[lang].ask;
+    document.getElementById('try-label').textContent=STR[lang].tryLabel;
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+    document.getElementById('btn-es').classList.toggle('active', lang==='es');
+    document.getElementById('btn-en').setAttribute('aria-pressed', lang==='en' ? 'true' : 'false');
+    document.getElementById('btn-es').setAttribute('aria-pressed', lang==='es' ? 'true' : 'false');
+    document.documentElement.lang = lang;
+    if (voice.micBtn){
+      voice.micBtn.setAttribute('aria-label', STR[lang].voice.mic);
+      var micLabel=voice.micBtn.querySelector('.mic-label');
+      if (micLabel) micLabel.textContent=STR[lang].voice.mic;
+    }
+    if (voice.enc) voice.enc.textContent=STR[lang].voice.encourage;
+    if (voice.hint) voice.hint.textContent = STR[lang].voice.listening;
+    if (voice.rpSpeakBtn && !(voice.speakState && voice.speakState.btn===voice.rpSpeakBtn)) resetSpeakBtn(voice.rpSpeakBtn, lang);
+    renderChips();
+    rpApply();
+  }
+  function ask(text){
+    var q=(text||'').trim(); if(!q) return;
+    addUser(q);
+    var btn=document.getElementById('sendbtn'); btn.disabled=true;
+    var thinking=document.createElement('div'); thinking.className='msg bot'; thinking.textContent=STR[lang].thinking;
+    chat.appendChild(thinking); scrollChat();
+    fetch('/api/ask', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, lang:lang}) })
+      .then(function(r){ return r.json(); })
+      .then(function(data){ thinking.remove(); addBot(data); })
+      .catch(function(){ thinking.remove(); addBot({lead: lang==='es' ? 'Lo siento, algo salió mal. Llame a la línea HELP del municipio al 201-587-2912.' : 'Sorry, something went wrong. Please call the Township HELP line at 201-587-2912.', details:[], contact:[]}); })
+      .finally(function(){ btn.disabled=false; });
+  }
+  document.getElementById('askform').addEventListener('submit', function(e){
+    e.preventDefault();
+    var input=document.getElementById('q'); ask(input.value); input.value=''; autoGrow();
+  });
+
+  /* ---------- report wizard (prepare mode) ----------
+     Client-side only: the wizard assembles a summary on this page for
+     the resident to call in. Nothing is sent, saved or stored anywhere. */
+  var rp = { step: 1, type: null };
+  function rpR(){ return STR[lang].report; }
+  function rpTypes(){
+    var el=document.getElementById('rp-types'); el.innerHTML='';
+    rpR().types.forEach(function(ty, i){
+      var b=document.createElement('button'); b.type='button'; b.className='rp-type'+(rp.type===i?' sel':''); b.textContent=ty;
+      b.onclick=function(){ rp.type=i; rpTypes(); document.getElementById('rp-err').textContent=''; };
+      el.appendChild(b);
+    });
+  }
+  function rpShow(){
+    for (var s=1;s<=5;s++){ document.getElementById('rp-step'+s).hidden = rp.step!==s; }
+    document.getElementById('rp-back').hidden = rp.step===1;
+    document.getElementById('rp-next').hidden = rp.step===5;
+    document.getElementById('rp-err').textContent='';
+    if (rp.step===5){ document.getElementById('rp-summary').textContent = rpSummary(); }
+  }
+  function rpSummary(){
+    var R=rpR(); var lines=[];
+    lines.push(R.sumType+': '+(rp.type!=null ? R.types[rp.type] : ''));
+    lines.push(R.sumAddr+': '+document.getElementById('rp-addr').value.trim());
+    var ld=document.getElementById('rp-locdesc').value.trim(); if (ld) lines.push(R.sumLoc+': '+ld);
+    lines.push(R.sumDesc+': '+document.getElementById('rp-desc').value.trim());
+    var nm=document.getElementById('rp-name').value.trim(); if (nm) lines.push(R.sumName+': '+nm);
+    var ci=document.getElementById('rp-contactinfo').value.trim(); if (ci) lines.push(R.sumContact+': '+ci);
+    if (document.getElementById('rp-contactme').checked) lines.push(R.sumCb+': Yes');
+    return lines.join('\n');
+  }
+  function rpApply(){
+    var R=rpR();
+    document.getElementById('rp-title').textContent=R.title;
+    document.getElementById('rp-sub').textContent=R.sub;
+    document.getElementById('rp-start').textContent=R.start;
+    document.getElementById('rp-s1-label').textContent=R.s1;
+    document.getElementById('rp-s2-label').textContent=R.s2;
+    document.getElementById('rp-addr-label').textContent=R.addr;
+    document.getElementById('rp-locdesc-label').textContent=R.locdesc;
+    document.getElementById('rp-s3-label').textContent=R.s3;
+    document.getElementById('rp-desc-label').textContent=R.desc;
+    document.getElementById('rp-s4-label').textContent=R.s4;
+    document.getElementById('rp-name-label').textContent=R.name;
+    document.getElementById('rp-contactinfo-label').textContent=R.contactinfo;
+    document.getElementById('rp-contactme-label').textContent=R.contactme;
+    document.getElementById('rp-s5-label').textContent=R.s5;
+    document.getElementById('rp-copy').textContent=R.copy;
+    document.getElementById('rp-gov').textContent=R.gov;
+    document.getElementById('rp-final-note').textContent=R.finalNote;
+    document.getElementById('rp-warn').textContent=R.warn;
+    document.getElementById('rp-alt').textContent=R.alt;
+    document.getElementById('rp-back').textContent=R.back;
+    document.getElementById('rp-next').textContent=R.next;
+    rpTypes();
+    if (rp.step===5){ document.getElementById('rp-summary').textContent = rpSummary(); }
+  }
+  document.getElementById('rp-start').onclick=function(){
+    document.getElementById('rp-wiz').hidden=false;
+    document.getElementById('rp-start').hidden=true;
+    rp.step=1; rpShow();
+  };
+  document.getElementById('rp-back').onclick=function(){ if (rp.step>1){ rp.step--; rpShow(); } };
+  document.getElementById('rp-next').onclick=function(){
+    var R=rpR(); var err=document.getElementById('rp-err');
+    if (rp.step===1 && rp.type===null){ err.textContent=R.errType; return; }
+    if (rp.step===2 && !document.getElementById('rp-addr').value.trim()){ err.textContent=R.errAddr; return; }
+    if (rp.step===3 && !document.getElementById('rp-desc').value.trim()){ err.textContent=R.errDesc; return; }
+    if (rp.step<5){ rp.step++; rpShow(); }
+  };
+  document.getElementById('rp-copy').onclick=function(){
+    var txt=document.getElementById('rp-summary').textContent;
+    if (navigator.clipboard){ navigator.clipboard.writeText(txt); }
+    document.getElementById('rp-copy').textContent=rpR().copied;
+  };
+
+  /* ---------- voice: microphone input + read-aloud ----------
+     Both features are feature-detected. When an API is missing, its
+     control is never created and the page behaves exactly as before.
+     Dictation fills the same composer textarea and goes through the
+     same form submit path as typing. While the report wizard is open,
+     dictation instead fills the wizard's current step: a spoken type
+     at step 1 selects it, and a final transcript in a field step fills
+     the field and advances exactly one step via the Continue button.
+     Interim text is only ever displayed, never submitted or advanced. */
+  var MIC_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2z"/></svg>';
+  var SPEAK_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>';
+  var STOP_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg>';
+  var voice = {
+    SR: window.SpeechRecognition || window.webkitSpeechRecognition || null,
+    synthOK: ('speechSynthesis' in window) && ('SpeechSynthesisUtterance' in window),
+    rec: null, listening: false, micBtn: null, hint: null, enc: null, speakState: null,
+    msg: null, gotFinal: false, anyResult: false, pendingMsg: null, msgShown: false,
+    userStopped: false, timer: null, voiceList: null, rpSpeakBtn: null
+  };
+  function showVoiceMsg(text){
+    if (!voice.msg) return;
+    voice.msg.textContent=text;
+    voice.msg.classList.add('on');
+    voice.msgShown=true;
+  }
+  function hideVoiceMsg(){
+    if (!voice.msg) return;
+    voice.msg.classList.remove('on');
+    voice.msgShown=false;
+  }
+  function submitAskForm(){
+    var form=document.getElementById('askform');
+    var input=document.getElementById('q');
+    if (form.requestSubmit) form.requestSubmit();
+    else { ask(input.value); input.value=''; autoGrow(); }
+  }
+  /* ----- report wizard dictation routing ----- */
+  function wizardOpen(){
+    var w=document.getElementById('rp-wiz');
+    return !!(w && !w.hidden);
+  }
+  function wizardField(){
+    if (!wizardOpen()) return null;
+    if (rp.step===2) return document.getElementById('rp-addr');
+    if (rp.step===3) return document.getElementById('rp-desc');
+    if (rp.step===4) return document.getElementById('rp-name');
+    return null;
+  }
+  function normText(s){ return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function matchRpType(text){
+    var n=' '+normText(text)+' ';
+    var langs=['en','es'];
+    for (var li=0; li<langs.length; li++){
+      var types=STR[langs[li]].report.types;
+      for (var i=0;i<types.length;i++){
+        if (n.indexOf(' '+normText(types[i])+' ')!==-1) return i;
+      }
+    }
+    return null;
+  }
+  function advanceWizard(){
+    document.getElementById('rp-next').click();
+  }
+  function initVoice(){
+    if (voice.SR){
+      var form=document.getElementById('askform');
+      var bar=document.createElement('div');
+      bar.className='voicebar'; bar.id='voicebar';
+      var btn=document.createElement('button');
+      btn.type='button'; btn.id='micbtn'; btn.className='mic';
+      btn.innerHTML=MIC_SVG+'<span class="mic-label">'+esc(STR[lang].voice.mic)+'</span>';
+      btn.setAttribute('aria-label', STR[lang].voice.mic);
+      btn.setAttribute('aria-pressed', 'false');
+      bar.appendChild(btn);
+      var enc=document.createElement('span');
+      enc.className='voice-enc'; enc.id='voice-enc';
+      enc.textContent=STR[lang].voice.encourage;
+      bar.appendChild(enc);
+      form.parentNode.insertBefore(bar, form);
+      voice.micBtn=btn;
+      voice.enc=enc;
+      var hint=document.createElement('div');
+      hint.id='voicehint'; hint.className='voicehint'; hint.setAttribute('aria-live', 'polite');
+      hint.textContent=STR[lang].voice.listening;
+      form.parentNode.appendChild(hint);
+      voice.hint=hint;
+      var msg=document.createElement('div');
+      msg.id='voicemsg'; msg.className='voicemsg'; msg.setAttribute('aria-live', 'polite');
+      form.parentNode.appendChild(msg);
+      voice.msg=msg;
+      document.getElementById('q').addEventListener('input', hideVoiceMsg);
+      form.addEventListener('submit', hideVoiceMsg);
+      btn.onclick=toggleMic;
+    }
+    if (voice.synthOK){
+      /* Listen control on the prepared report summary (step 5). It
+         reads whatever the summary currently shows, in the current
+         language, so it never goes stale on a language switch. */
+      var rpCopy=document.getElementById('rp-copy');
+      if (rpCopy && rpCopy.parentNode){
+        var rb=makeSpeakButton(
+          function(){ return document.getElementById('rp-summary').textContent.replace(/\s+/g,' ').trim(); },
+          function(){ return lang; }
+        );
+        rpCopy.parentNode.insertBefore(rb, rpCopy.nextSibling);
+        voice.rpSpeakBtn=rb;
+      }
+    }
+  }
+  function setListening(on){
+    voice.listening=on;
+    if (voice.micBtn){
+      voice.micBtn.classList.toggle('listening', on);
+      voice.micBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    if (voice.hint) voice.hint.classList.toggle('on', on);
+  }
+  function toggleMic(){
+    if (!voice.SR) return;
+    if (voice.listening && voice.rec){
+      voice.userStopped=true;
+      try { voice.rec.stop(); } catch (e) {}
+      return;
+    }
+    hideVoiceMsg();
+    var rec;
+    try { rec=new voice.SR(); } catch (e) { return; }
+    voice.rec=rec;
+    voice.gotFinal=false;
+    voice.anyResult=false;
+    voice.pendingMsg=null;
+    voice.msgShown=false;
+    voice.userStopped=false;
+    rec.lang = lang==='es' ? 'es-US' : 'en-US';
+    rec.interimResults=true;
+    rec.maxAlternatives=1;
+    rec.onresult=function(ev){
+      voice.anyResult=true;
+      var finalText='', interimText='';
+      for (var i=0; i<ev.results.length; i++){
+        if (ev.results[i].isFinal) finalText+=ev.results[i][0].transcript;
+        else interimText+=ev.results[i][0].transcript;
+      }
+      finalText=finalText.trim();
+      var field=wizardField();
+      if (finalText){
+        voice.gotFinal=true;
+        if (field){
+          field.value=finalText;
+          advanceWizard();
+        } else if (wizardOpen() && rp.step===1){
+          var idx=matchRpType(finalText);
+          if (idx!==null){
+            rp.type=idx; rpTypes();
+            document.getElementById('rp-err').textContent='';
+            advanceWizard();
+          } else {
+            var input=document.getElementById('q');
+            input.value=finalText; autoGrow();
+            submitAskForm();
+          }
+        } else {
+          var input2=document.getElementById('q');
+          input2.value=finalText; autoGrow();
+          submitAskForm();
+        }
+      } else if (interimText){
+        /* Show what is being heard, live, without submitting or
+           advancing anything. Only the final transcript acts. */
+        if (field) field.value=interimText;
+        else {
+          var input3=document.getElementById('q');
+          input3.value=interimText; autoGrow();
+        }
+      }
+    };
+    rec.onerror=function(ev){
+      var kind=ev && ev.error ? ev.error : '';
+      if (kind==='not-allowed' || kind==='service-not-allowed') voice.pendingMsg=STR[lang].voice.blocked;
+      else if (kind==='network') voice.pendingMsg=STR[lang].voice.network;
+      else voice.pendingMsg=STR[lang].voice.nohear;
+      setListening(false);
+      if (!voice.gotFinal && !voice.userStopped && !voice.msgShown) showVoiceMsg(voice.pendingMsg);
+    };
+    rec.onend=function(){
+      if (voice.timer){ clearTimeout(voice.timer); voice.timer=null; }
+      setListening(false);
+      if (!voice.gotFinal && !voice.userStopped && !voice.msgShown){
+        showVoiceMsg(voice.pendingMsg || STR[lang].voice.nohear);
+      }
+      voice.pendingMsg=null;
+    };
+    try {
+      rec.start();
+      setListening(true);
+      /* Safety net: if nothing at all comes back within about 10
+         seconds, stop; onend then shows the didn't-catch message. */
+      voice.timer=setTimeout(function(){
+        voice.timer=null;
+        if (voice.listening && !voice.anyResult && voice.rec===rec){
+          try { rec.stop(); } catch (e) {}
+        }
+      }, 10000);
+    } catch (e) { setListening(false); }
+  }
+  /* Voice list caching: browsers often return an empty list from the
+     first getVoices() call and fill it in later, firing voiceschanged.
+     Cache whatever is available and refresh on that event; speaking
+     never waits for the list. */
+  function refreshVoices(){
+    if (!voice.synthOK) return;
+    try {
+      var vs=window.speechSynthesis.getVoices();
+      if (vs) voice.voiceList=vs;
+    } catch (e) {}
+  }
+  if (voice.synthOK){
+    refreshVoices();
+    try {
+      if (window.speechSynthesis.addEventListener) window.speechSynthesis.addEventListener('voiceschanged', refreshVoices);
+      else window.speechSynthesis.onvoiceschanged=refreshVoices;
+    } catch (e) {}
+  }
+  var VOICE_NATURAL=['google','premium','enhanced','natural','neural'];
+  var VOICE_GOOD={
+    en: ['samantha','ava','allison','susan','zira','jenny','aria'],
+    es: ['mónica','monica','paulina','jorge','juan','sabina']
+  };
+  var VOICE_AVOID=['albert','bells','cellos','whisper','zarvox','trinoids','boing','bubbles','bad news','good news','deranged','hysterical','pipe organ','fred','junior','ralph','kathy','vicki','princess','bruce','wobble'];
+  function nameHas(name, list){
+    for (var i=0;i<list.length;i++){ if (name.indexOf(list[i])>=0) return true; }
+    return false;
+  }
+  function pickVoice(speakLang){
+    try {
+      var voices=(voice.voiceList && voice.voiceList.length) ? voice.voiceList : null;
+      if (!voices){
+        refreshVoices();
+        voices=voice.voiceList || [];
+      }
+      var prefix=speakLang, best=null, bestTier=99, bestLocale=99;
+      for (var i=0;i<voices.length;i++){
+        var vl=(voices[i].lang || '').toLowerCase().replace(/_/g, '-');
+        if (vl.indexOf(prefix)!==0) continue;
+        var name=(voices[i].name || '').toLowerCase();
+        /* Quality tiers: 0 natural/modern, 1 known good device voice,
+           2 anything else, 3 novelty/legacy robotic (used only when
+           nothing else speaks the language). Within a tier, the exact
+           US locale wins. */
+        var tier;
+        if (nameHas(name, VOICE_NATURAL)) tier=0;
+        else if (nameHas(name, VOICE_GOOD[prefix] || [])) tier=1;
+        else if (!nameHas(name, VOICE_AVOID)) tier=2;
+        else tier=3;
+        var locale=(vl===prefix+'-us') ? 0 : 1;
+        if (tier<bestTier || (tier===bestTier && locale<bestLocale)){
+          best=voices[i]; bestTier=tier; bestLocale=locale;
+        }
+      }
+      return best;
+    } catch (e) { return null; }
+  }
+  function resetSpeakBtn(btn, speakLang){
+    btn.classList.remove('speaking');
+    btn.innerHTML=SPEAK_SVG+'<span>'+esc(STR[speakLang].voice.listen)+'</span>';
+    btn.setAttribute('aria-label', STR[speakLang].voice.listen);
+  }
+  function stopSpeak(){
+    if (voice.synthOK) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+    if (voice.speakState){
+      var st=voice.speakState; voice.speakState=null;
+      resetSpeakBtn(st.btn, st.lang);
+    }
+  }
+  function makeSpeakButton(getText, getLang){
+    var btn=document.createElement('button');
+    btn.type='button'; btn.className='speakbtn';
+    var speakLang = getLang()==='es' ? 'es' : 'en';
+    btn.innerHTML=SPEAK_SVG+'<span>'+esc(STR[speakLang].voice.listen)+'</span>';
+    btn.setAttribute('aria-label', STR[speakLang].voice.listen);
+    btn.onclick=function(){
+      if (voice.speakState && voice.speakState.btn===btn){ stopSpeak(); return; }
+      stopSpeak();
+      var sl = getLang()==='es' ? 'es' : 'en';
+      var text=getText();
+      if (!text) return;
+      var utt=new SpeechSynthesisUtterance(text);
+      utt.lang = sl==='es' ? 'es-US' : 'en-US';
+      utt.rate=1.08;
+      utt.pitch=1.0;
+      var v=pickVoice(sl); if (v) utt.voice=v;
+      voice.speakState={ btn: btn, lang: sl };
+      btn.classList.add('speaking');
+      btn.innerHTML=STOP_SVG+'<span>'+esc(STR[sl].voice.stop)+'</span>';
+      btn.setAttribute('aria-label', STR[sl].voice.stop);
+      utt.onend=utt.onerror=function(){
+        if (voice.speakState && voice.speakState.btn===btn){
+          voice.speakState=null; resetSpeakBtn(btn, sl);
+        }
+      };
+      window.speechSynthesis.speak(utt);
+    };
+    return btn;
+  }
+  function attachSpeak(div, text, answerLang){
+    if (!voice.synthOK || !text) return;
+    var speakLang = answerLang==='es' ? 'es' : (answerLang==='en' ? 'en' : lang);
+    var btn=makeSpeakButton(
+      function(){ return text; },
+      function(){ return speakLang; }
+    );
+    div.appendChild(btn);
+  }
+
+  /* ---------- composer: multi-line textarea with auto-grow ----------
+     Compact embed sizing: starts at 2 lines, grows with the text up
+     to 120px, then scrolls. Enter submits; Shift+Enter inserts a
+     newline. After a submit the box clears and shrinks back. */
+  var qEl=document.getElementById('q');
+  function autoGrow(){
+    qEl.style.height='auto';
+    var max=120;
+    qEl.style.height=Math.min(qEl.scrollHeight, max)+'px';
+    qEl.style.overflowY=qEl.scrollHeight>max ? 'auto' : 'hidden';
+  }
+  qEl.addEventListener('input', autoGrow);
+  qEl.addEventListener('keydown', function(e){
+    if (e.key==='Enter' && !e.shiftKey){
+      e.preventDefault();
+      var form=document.getElementById('askform');
+      if (form.requestSubmit) form.requestSubmit();
+      else form.dispatchEvent(new Event('submit', { cancelable: true }));
+    }
+  });
+
+  document.getElementById('btn-en').onclick=function(){ lang='en'; applyLang(); };
+  document.getElementById('btn-es').onclick=function(){ lang='es'; applyLang(); };
+  applyLang();
+  initVoice();
+  addBot({lead: STR.en.greeting, details:[], contact:[]});
+</script>
+</body>
+</html>
